@@ -1,0 +1,4137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      What are Status Codes? A Complete Guide to HTTP Status Codes? - Needle Tip
+    </title>
+    <meta
+      property="og:title"
+      content="What are Status Codes? A Complete Guide to HTTP Status Codes? - Needle Tip"
+    />
+    <meta
+      name="twitter:title"
+      content="What are Status Codes? A Complete Guide to HTTP Status Codes? - Needle Tip"
+    />
+
+    <meta
+      name="description"
+      content="As a website owner, you must keep track of a few common HTTP status codes. Here is a guide to explain to you the popular codes and their meanings."
+    />
+    <meta
+      property="og:description"
+      content="As a website owner, you must keep track of a few common HTTP status codes. Here is a guide to explain to you the popular codes and their meanings."
+    />
+    <meta
+      name="twitter:card"
+      content="As a website owner, you must keep track of a few common HTTP status codes. Here is a guide to explain to you the popular codes and their meanings."
+    />
+    <meta
+      name="twitter:description"
+      content="As a website owner, you must keep track of a few common HTTP status codes. Here is a guide to explain to you the popular codes and their meanings."
+    />
+
+    <meta
+      property="og:image"
+      content="https://Needle Tip.com/images/shares/Blogimages/11668755_20945761.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://Needle Tip.com/images/shares/Blogimages/11668755_20945761.jpg"
+    />
+
+    <link
+      rel="canonical"
+      href="https://Needle Tip.com/blog/what-are-status-codes"
+    />
+
+    <meta
+      property="og:url"
+      content="https://Needle Tip.com/blog/what-are-status-codes"
+    />
+
+    <meta
+      name="gcsk-token"
+      content="6LdY8REsAAAAAHgYMrCiz5d1oqQuVvWrSBCCHSXH"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-83154766-3"
+      defer
+    ></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-83154766-3");
+    </script>
+    <!-- Hotjar Tracking Code for https://Needle Tip.com/ -->
+    <script defer>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3036387, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script type="text/javascript" defer>
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gjnrlao7rw");
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "361392043644823");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=361392043644823&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+      .packages-section .main-box .content {
+        flex-wrap: wrap;
+        gap: 33px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .packages-section .main-box .content {
+          flex-wrap: nowrap;
+        }
+      }
+    </style>
+    <meta
+      name="simpledcver"
+      content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJibHVlbGlnaHRjYW5uYWJpcy55b3VyZGlnaWxhYi5jb20iLCJleHAiOjE3MjU0OTQ0MDB9.om7xJmRKMWc3fYSjZiY2CIfLDHpZUdpG0655pim3dGY"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../build/fonts.css@id=dc084f7f925a8b069566.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../build/main.css@id=d0f367479f945b9ce054.css"
+    />
+
+    <!--fancy box-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
+    />
+
+    <!--gallery box-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Needle Tip",
+        "legalName": "Your Digi Lab",
+        "url": "https://Needle Tip.com",
+        "logo": "https://Needle Tip.com/dark-logo.png",
+        "foundingDate": "2020",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "300 East Ash Lane Euless, TX 76039",
+          "addressLocality": "Euless",
+          "addressRegion": "TX",
+          "postalCode": "76039",
+          "addressCountry": "USA"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "[+1(111) 111-1111]",
+          "email": "support@Needle Tip.com"
+        },
+        "sameAs": [
+          "https://www.facebook.com/Needle TipOfficial/",
+          "https://www.instagram.com/Needle Tipofficial/"
+        ]
+      }
+    </script>
+
+    <noscript>
+      <style type="text/css">
+        .css-typing {
+          visibility: visible;
+        }
+        .reveallr,
+        .revealrl,
+        .revealfadein,
+        .revealtb,
+        .revealbt,
+        .bounceInDown {
+          opacity: 1;
+          transform: unset;
+          -webkit-transition: unset;
+        }
+      </style>
+    </noscript>
+
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge"
+    /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Needle Tip" />
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="../manifest.json" />
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="YDL" />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="../favicon/apple-icon-512x512.png@v=2"
+    />
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="YDL" />
+    <link rel="apple-touch-icon" href="../favicon/apple-icon-512x512.png@v=2" />
+    <link rel="icon" href="../favicon/favicon.ico@v=2" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../favicon/apple-icon-57x57.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../favicon/apple-icon-60x60.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../favicon/apple-icon-72x72.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../favicon/apple-icon-76x76.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../favicon/apple-icon-114x114.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../favicon/apple-icon-120x120.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../favicon/apple-icon-144x144.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-icon-152x152.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-icon-180x180.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../favicon/android-icon-192x192.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../favicon/favicon-96x96.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png@v=2"
+    />
+    <link
+      href="../favicon/logo-640x1136.png@v=2"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-750x1334.png@v=2"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1242x2208.png@v=2"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1125x2436.png@v=2"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-828x1792.png@v=2"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1242x2688.png@v=2"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1536x2048.png@v=2"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1668x2224.png@v=2"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1668x2388.png@v=2"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-2048x2732.png@v=2"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/favicon/apple-icon-512x512.png?v=2"
+    />
+
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("https://Needle Tip.com/serviceworker.js", { scope: "." })
+          .then(
+            function (registration) {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope,
+              );
+            },
+            function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            },
+          );
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/lightbox2/css/lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/p/294.css@v=2303852843.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/TopBanner.css@id=89382d4028885ac68e13.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/blogs.css@id=7f808ba0e7d825a2148b.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/blogDetail.css@id=2a98e7cfdb5a10ad4da2.css"
+      type="text/css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "What are Status Codes? A Complete Guide to HTTP Status Codes?",
+        "alternativeHeadline": "What are Status Codes? A Complete Guide to HTTP Status Codes?",
+        "image": "https://Needle Tip.com/images/shares/Blogimages/11668755_20945761.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "John Fernandes",
+          "url": "https://Needle Tip.com/blog/author/john-fernandes"
+        },
+        "genre": "search engine optimization",
+        "keywords": "Status Codes",
+        "publisher": {
+          "@type": "Organization",
+          "name": "John Fernandes",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://Needle Tip.com/images/shares/Blogimages/john.jpg"
+          }
+        },
+        "url": "https://Needle Tip.com/blog/what-are-status-codes",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://Needle Tip.com/blog/what-are-status-codes"
+        },
+        "datePublished": "2022-11-21",
+        "dateCreated": "2022-11-21",
+        "dateModified": "2025-04-07",
+        "description": "As a website owner, you must keep track of a few common HTTP status codes. Here is a guide to explain to you the popular codes and their meanings."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://Needle Tip.com",
+              "name": "Needle Tip",
+              "image": "https://Needle Tip.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://Needle Tip.com/blog",
+              "name": "Blog | Needle Tip",
+              "image": "https://Needle Tip.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://Needle Tip.com/blog/web-development",
+              "name": "Web Development",
+              "image": "https://Needle Tip.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://Needle Tip.com/blog/what-are-status-codes",
+              "name": "What are Status Codes? A Complete Guide to HTTP Status Codes?",
+              "image": "https://Needle Tip.com/images/shares/Blogimages/11668755_20945761.jpg"
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      /* Add this CSS for better TOC scrolling behavior */
+
+      .accordion-body {
+        max-height: 60vh;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        padding-right: 10px;
+      }
+
+      .sidebar-subscribe-box {
+        background: #fff6f1;
+        border-radius: 16px;
+        padding: 28px 20px 24px 20px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        font-family: inherit;
+      }
+
+      .subscribe-form-ui {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .subscribe-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        line-height: 1.2;
+        color: #222;
+      }
+
+      .subscribe-subheading {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .subscribe-input,
+      .subscribe-input-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .subscribe-input {
+        background: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 13px 14px;
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: #222;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        outline: none;
+        width: 100%;
+        transition: box-shadow 0.2s;
+      }
+
+      .subscribe-input:focus {
+        box-shadow: 0 0 0 2px #ff6600;
+      }
+
+      .subscribe-input-group {
+        gap: 8px;
+      }
+
+      .subscribe-country-code {
+        border: none;
+        border-radius: 8px;
+        background: #fff;
+        padding: 13px 10px 13px 10px;
+        font-size: 16px;
+        color: #222;
+        min-width: 80px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        outline: none;
+        appearance: none;
+      }
+
+      .subscribe-mobile {
+        flex: 1;
+      }
+
+      .subscribe-textarea {
+        resize: vertical;
+        min-height: 48px;
+        max-height: 120px;
+      }
+
+      .subscribe-btn {
+        background: #ff6b47;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 0;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 6px;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.2s;
+      }
+
+      .subscribe-btn:hover {
+        background: rgb(255, 82, 38);
+      }
+    </style>
+  </head>
+  <body class="hrd-sec blog pg-294" style="overflow: hidden">
+    <header class="navigation darkHeader">
+      <div class="container">
+        <div class="top-bar">
+          <div class="tb-cont">
+            <div class="col-lg-2 col-6 dkLogo">
+              <a href="../index.html" aria-label="logo">
+                <img
+                  src="../assets/images/logo.png"
+                  alt="logo"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-10 col-12 successReview">
+              <div class="dkMenu">
+                <nav class="navbar navbar-expand-lg p-0 col-12 nav-desk">
+                  <!-- Container wrapper -->
+                  <div class="main-nav">
+                    <!-- Toggle button -->
+                    <button
+                      class="navbar-toggler px-0"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#navbarExampleOnHover"
+                      aria-controls="navbarExampleOnHover"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div
+                      class="collapse navbar-collapse"
+                      id="navbarExampleOnHover"
+                    >
+                      <!-- Left links -->
+                      <ul class="navbar-nav w-75p">
+                        <!-- Navbar dropdown -->
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-1"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Services
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0"
+                            aria-labelledby="navbarDropdown-1"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="what-are-status-codes.html#"
+                                        aria-label="service-icon"
+                                      >
+                                        Web Development
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../ecommerce-website-development.html"
+                                          >Ecommerce</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../cms-development-company.html"
+                                          >CMS</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../web-app-development.html"
+                                          >Web Application</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../digital-marketing-service.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Digital Marketing
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="../seo-company.html">SEO</a>
+                                      </li>
+                                      <li>
+                                        <a href="../ppc-agency.html">PPC</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../social-media-marketing-services.html"
+                                          >SMM</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../software-development-services.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Software Development
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >SAP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >ERP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >POS</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >CRM</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../logo-design-services.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Logo Design
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../illustrated-logo-design.html"
+                                          >Illustrated Logo</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../symbolic-logo-designs.html"
+                                          >Symbolic Logo Design</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../typography-logo.html"
+                                          >Typography Logo</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../iconic-logos.html"
+                                          >Ionic Logos</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../index.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Video Animation
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="../2d-animation-services.html"
+                                          >2d Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../3d-animation-services.html"
+                                          >3d Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../index.html"
+                                          >Product Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../index.html"
+                                          >Whiteboard Animation</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Industries
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0 int-w10"
+                            aria-labelledby="navbarDropdown-2"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >Fintech</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >Healthcare</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >Real Estate</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="what-are-status-codes.html#"
+                                          >Logistics</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Technologies
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0 int-w20"
+                            aria-labelledby="navbarDropdown-2"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../react-js-web-development-company.html"
+                                          >React</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../laravel-web-development.html"
+                                          >Laravel</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../php-web-development.html"
+                                          >PHP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../node-js-development-company.html"
+                                          >NodeJs</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../wordpress-development-services.html"
+                                          >Wordpress</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../java-web-development.html"
+                                          >Java</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="what-are-status-codes.html#porfolio-grids"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Our Work
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../contact-us.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Contact
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../about-us.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            About Us
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../blog.1.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Blogs
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btnDark">
+                        <a
+                          href="../free-quote.html"
+                          rel="index follow"
+                          class="d-btn2"
+                          target="_self"
+                          >Get Free Quote
+                          <div>
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              class="rocket-img"
+                              src="../assets/images/rocket.png"
+                              data-loaded="true"
+                              alt="Rocket"
+                            />
+                            <span class="circle1"></span>
+                            <span class="circle2"></span>
+                            <span class="circle3"></span>
+                            <span class="circle4"></span>
+                            <span class="circle5"></span>
+                            <span class="circle6"></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Collapsible wrapper -->
+                  </div>
+                  <!-- Container wrapper -->
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light nav-mb">
+                  <div class="logo d-lg-none">
+                    <a href="../index.html" aria-label="logo">
+                      <img
+                        src="../assets/images/logo.png"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="mobile-nav d-lg-none mm-menu">
+                    <div id="myNav" class="overlay">
+                      <p class="closebtn" onclick="closeNav()">
+                        <i class="fa fa-close"></i>
+                      </p>
+                      <div class="overlay-content">
+                        <div class="">
+                          <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingOne">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseNav"
+                                >
+                                  Service
+                                </button>
+                              </span>
+                              <div
+                                id="collapseNav"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="what-are-status-codes.html#"
+                                            aria-label="service-icon"
+                                          >
+                                            Web Development
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../ecommerce-website-development.html"
+                                              >Ecommerce</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../cms-development-company.html"
+                                              >CMS</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../web-app-development.html"
+                                              >Web Application</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../digital-marketing-service.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Digital Marketing
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a href="../seo-company.html"
+                                              >SEO</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../ppc-agency.html">PPC</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../social-media-marketing-services.html"
+                                              >SMM</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../software-development-services.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Software Development
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >SAP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >ERP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >POS</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >CRM</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../logo-design-services.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Logo Design
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../illustrated-logo-design.html"
+                                              >Illustrated Logo</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../symbolic-logo-designs.html"
+                                              >Symbolic Logo Design</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../typography-logo.html"
+                                              >Typography Logo</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../iconic-logos.html"
+                                              >Ionic Logos</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../index.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Video Animation
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../2d-animation-services.html"
+                                              >2d Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../3d-animation-services.html"
+                                              >3d Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../index.html"
+                                              >Product Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../index.html"
+                                              >Whiteboard Animation</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingTwo">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                >
+                                  Industries
+                                </button>
+                              </span>
+                              <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >Fintech</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >Healthcare</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../shopify-development-services.html"
+                                              >Real Estate</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../react-native-app-development.html"
+                                              >Logistics</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingThree">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                >
+                                  Technologies
+                                </button>
+                              </span>
+                              <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >React</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../laravel-web-development.html"
+                                              >Laravel</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../php-web-development.html"
+                                              >PHP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="what-are-status-codes.html#"
+                                              >NodeJs</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../wordpress-development-services.html"
+                                              >Wordpress</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../java-web-development.html"
+                                              >Java</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-single-item">
+                              <a
+                                href="what-are-status-codes.html#portfolio-grids"
+                                >Our Work</a
+                              >
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../contact-us.html">Contact</a>
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../about-us.html">About Us</a>
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../blog.1.html">Blogs</a>
+                            </div>
+                            <div class="btnDark">
+                              <a
+                                href="../free-quote.html"
+                                rel="index follow"
+                                class="d-btn2"
+                                target="_self"
+                                >Get Free Quote
+                                <div>
+                                  <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="rocket-img"
+                                    src="../assets/images/rocket.png"
+                                    data-loaded="true"
+                                    alt="Rocket"
+                                  />
+                                  <span class="circle1"></span>
+                                  <span class="circle2"></span>
+                                  <span class="circle3"></span>
+                                  <span class="circle4"></span>
+                                  <span class="circle5"></span>
+                                  <span class="circle6"></span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mbnavicon">
+                      <i
+                        class="fa fa-align-right"
+                        onclick="openNav()"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      // Get the header element
+      const header = document.querySelector(".navigation");
+
+      // Function to change header background on scroll
+      function changeHeaderBackground() {
+        if (window.scrollY > 0) {
+          header.style.backgroundColor = "#09002b"; // Change to dark blue
+        } else {
+          header.style.backgroundColor = ""; // Reset to original
+        }
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", changeHeaderBackground);
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.classList.contains("show")) {
+            // Closing: set max-height to 0
+            panel.style.maxHeight = "0";
+            panel.classList.remove("show");
+          } else {
+            // Opening: set max-height to scrollHeight
+            panel.classList.add("show");
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <div class="progress"></div>
+    <section class="blog-detail">
+      <section class="bg-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 blgdtctn">
+              <div class="blog-header">
+                <div class="breadcrumb mb-4">
+                  <ul class="">
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="../blog.1.html">Blog</a></li>
+
+                    <li>
+                      What are Status Codes? A Complete Guide to HTTP Status
+                      Codes?
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="cnt-h mb-5">
+                  <h1 class="hdg-xl-d">
+                    What are Status Codes? A Complete Guide to HTTP Status
+                    Codes?
+                  </h1>
+                </div>
+                <div class="cnt-cat mb-5">
+                  <div class="cnt-anchor">
+                    <a href="https://Needle Tip.com/blog/web-development"
+                      >Web Development</a
+                    >
+                  </div>
+                  <div class="post-author">
+                    <p>
+                      By
+                      <a href="author/john-fernandes.html" class="catBtn"
+                        >John Fernandes</a
+                      >
+                      &nbsp;&nbsp; on Nov 21, 2022
+                    </p>
+                    <span>~ 4 minutes to read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-content-sec">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="sidebar" style="position: sticky; top: 120px">
+                <div class="sidebar-tab accordion">
+                  <div class="accordion-item">
+                    <button
+                      class="hd-head accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne1"
+                    >
+                      Table Of Content
+                    </button>
+                    <div
+                      id="collapseOne1"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <ul class="accordion-body"></ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Share Icons Section -->
+                <div class="share-section mt-4">
+                  <ul class="share-icons">
+                    <li>
+                      <a
+                        href="https://twitter.com/intent/tweet?url=https%3A%2F%2FNeedle Tip.com%2Fblog%2Fwhat-are-status-codes&text=What+are+Status+Codes%3F+A+Complete+Guide+to+HTTP+Status+Codes%3F"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on Twitter"
+                      >
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2FNeedle Tip.com%2Fblog%2Fwhat-are-status-codes"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on Facebook"
+                      >
+                        <i class="fa fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2FNeedle Tip.com%2Fblog%2Fwhat-are-status-codes"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://api.whatsapp.com/send?text=What+are+Status+Codes%3F+A+Complete+Guide+to+HTTP+Status+Codes%3F+https%3A%2F%2FNeedle Tip.com%2Fblog%2Fwhat-are-status-codes"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on WhatsApp"
+                      >
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:?subject=What+are+Status+Codes%3F+A+Complete+Guide+to+HTTP+Status+Codes%3F&body=Check+out+this+article%3A+https%3A%2F%2FNeedle Tip.com%2Fblog%2Fwhat-are-status-codes"
+                        aria-label="Share via Email"
+                      >
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 blgdtctn">
+              <!-- Dynamic Content Section -->
+              <div class="cnt-img mb-3">
+                <img
+                  id="frd-img"
+                  src="../images/shares/Blogimages/11668755_20945761.jpg"
+                />
+              </div>
+              <div class="post_body">
+                <section
+                  class="content-widget site-content w26"
+                  style="background: url()"
+                >
+                  <div class="container">
+                    <p>
+                      HTTP status codes carry great importance for every&nbsp;<a
+                        class="in"
+                        href="../hybrid-mobile-app-development.html"
+                        >web development company</a
+                      >. Interestingly, these codes are also necessary for most
+                      SEO professionals. A website user will not find these
+                      helpful, but a website owner must be careful about them.
+                    </p>
+
+                    <p>
+                      It is because a hypertext transfer protocol or HTTP status
+                      code directly affects website health. This article shares
+                      a complete guide about these codes and their meetings.
+                      Before proceeding further, let us learn what a status code
+                      means.
+                    </p>
+
+                    <h2 id="hd-hke8w">
+                      <strong>What Are HTTP Status Codes?</strong>
+                    </h2>
+
+                    <p>
+                      <img
+                        alt=""
+                        class="cntimg"
+                        decoding="async"
+                        loading="lazy"
+                        src="../images/shares/Blogimages/Status-Codes.jpg"
+                        style="width: 600px; height: 282px"
+                      />
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://www.geeksforgeeks.org/10-most-common-http-status-codes/"
+                        rel="nofollow"
+                        target="_blank"
+                        >Image Source</a
+                      >
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://ahrefs.com/blog/http-status-codes/"
+                        rel="nofollow"
+                        target="_blank"
+                        >HTTP status codes</a
+                      >&nbsp;can be considered as server responses to the
+                      browser. They include a 3-digit number, which defines the
+                      server status. The details of their functionality are
+                      provided by the&nbsp;<strong
+                        >World Wide Web Consortium</strong
+                      >, also known as the W3C.
+                    </p>
+
+                    <p>
+                      You cannot consider a status code as a part of the website
+                      content. These are the only a way of communication between
+                      the server and the browser. It helps to understand if a
+                      website&#39;s status is redirected, successful, or
+                      terminated.
+                    </p>
+
+                    <p>
+                      By understanding the different types of status codes, one
+                      can easily minimize website issues. Many of us come across
+                      the&nbsp;<strong>404 Not Found</strong>&nbsp;status code.
+                      Knowing about the details and categorization of this code
+                      can help you understand all other codes too. Below is a
+                      guide to different HTTP status codes to help beginners and
+                      every&nbsp;<a
+                        class="in"
+                        href="https://Needle Tip.com/seo-company"
+                        >SEO marketing company in the USA</a
+                      >.
+                    </p>
+
+                    <h2 id="hd-06cjo">
+                      <strong>A Guide to Different HTTP Status Codes</strong>
+                    </h2>
+
+                    <p>
+                      <img
+                        alt=""
+                        class="cntimg"
+                        decoding="async"
+                        loading="lazy"
+                        src="../images/shares/Blogimages/error-status-codes.jpg"
+                        style="width: 648px; height: 348px"
+                      />
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://web.archive.org/web/20250117154226/https://www.geeksforgeeks.org/10-most-common-http-status-codes/"
+                        rel="nofollow"
+                        target="_blank"
+                        >Image Source</a
+                      >
+                    </p>
+
+                    <p>
+                      There are more than 60 HTTP status codes available on the
+                      Internet. These are categorized into five different types.
+                    </p>
+
+                    <p>
+                      While each state code contains three digits, the first
+                      digit of each code falls between 1 and5.&nbsp;
+                    </p>
+
+                    <p>
+                      It is usually written as 1XX to 5XX. The first digit is
+                      used to define the status code category. Whereas, the last
+                      two digits contain specific information.
+                    </p>
+
+                    <p>
+                      The five different status code categories are discussed
+                      below.
+                    </p>
+
+                    <h3 id="hd-pv9a8">
+                      <strong
+                        >The Different Categories of HTTP Status Codes</strong
+                      >
+                    </h3>
+
+                    <h4 id="hd-2gda5">
+                      <strong>1xx &ndash; Informational</strong>
+                    </h4>
+
+                    <p>
+                      This category defines that the HTTP request sent by the
+                      browser is successfully received by the server and will
+                      continue processing further. Because it is a temporary
+                      response, most clients will not encounter it.
+                    </p>
+
+                    <h4 id="hd-grua2"><strong>2XX &ndash; Success</strong></h4>
+
+                    <p>
+                      This category defines that the HTTP request sent by the
+                      browser is successfully received, understood, and
+                      processed by the browser. Also, it helps to understand
+                      that the browser easily accepts the expected information.
+                    </p>
+
+                    <h4 id="hd-6yms4">
+                      <strong>3XX &ndash; Redirection</strong>
+                    </h4>
+
+                    <p>
+                      This category defines that the HTTP request sent by the
+                      server is successfully received but moved to a new
+                      location by the browser. It means that the user will be
+                      redirected.
+                    </p>
+
+                    <h4 id="hd-5893">
+                      <strong>4XX &ndash; Client Error</strong>
+                    </h4>
+
+                    <p>
+                      This category indicates that the HTTP request cannot be
+                      processed by the server due to a client-side error. For
+                      instance, authorization problems,&nbsp;<a
+                        href="https://www.google.com/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://akorbi.com/common-syntax-errors-that-change-the-meaning-of-phrases/%23:~:text%3DA%2520syntax%2520error%2520is%2520a,which%2520can%2520easily%2520be%2520misconstrued.&amp;ved=2ahUKEwjWptm12LX7AhXpi_0HHdlSDwsQFnoECAwQBQ&amp;usg=AOvVaw3ai3nGEhTJRJlheENw2gkl"
+                        rel="nofollow"
+                        target="_blank"
+                        >bad syntax</a
+                      >, and page unavailability.&nbsp;
+                    </p>
+
+                    <p>
+                      The response further explains whether it is a permanent or
+                      a temporary issue.
+                    </p>
+
+                    <h4 id="hd-7ljg9">
+                      <strong>5XX &ndash; Server Error</strong>
+                    </h4>
+
+                    <p>
+                      This category defines that the server is unable to process
+                      a valid HTTP request due to an encountered error. The
+                      response further describes the overall situation and
+                      explains whether it is a permanent or a temporary error.
+                    </p>
+
+                    <h2 id="hd-mxi35">
+                      <strong
+                        >A Complete List of Different HTTP Status Codes</strong
+                      >
+                    </h2>
+
+                    <p>
+                      <img
+                        alt=""
+                        class="cntimg"
+                        decoding="async"
+                        loading="lazy"
+                        src="../images/shares/Blogimages/http-status-code.jpg"
+                        style="width: 600px; height: 397px"
+                      />
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://www.seotesteronline.com/blog/technical-seo/http-status-codes/"
+                        rel="nofollow"
+                        target="_blank"
+                        >Image Source</a
+                      >
+                    </p>
+
+                    <p>
+                      The list below defines the five different HTTP status code
+                      groups and their functions.
+                    </p>
+
+                    <table width="665">
+                      <tbody>
+                        <tr>
+                          <td width="251">
+                            <p align="center"><b>Status code</b></p>
+                          </td>
+                          <td width="414">
+                            <p align="center"><b>Meaning</b></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p><u>1xx Informational</u></p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>100</p>
+                          </td>
+                          <td width="414">
+                            <p>Continue</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>101</p>
+                          </td>
+                          <td width="414">
+                            <p>Switching protocols</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>102</p>
+                          </td>
+                          <td width="414">
+                            <p>Processing</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>103</p>
+                          </td>
+                          <td width="414">
+                            <p>Early Hints</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>&nbsp;</p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p><u>2xx Successful</u></p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>200</p>
+                          </td>
+                          <td width="414">
+                            <p>OK</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>201</p>
+                          </td>
+                          <td width="414">
+                            <p>Created</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>202</p>
+                          </td>
+                          <td width="414">
+                            <p>Accepted</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>203&nbsp;</p>
+                          </td>
+                          <td width="414">
+                            <p>Non-Authoritative Information</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>204</p>
+                          </td>
+                          <td width="414">
+                            <p>No Content</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>205</p>
+                          </td>
+                          <td width="414">
+                            <p>Reset Content</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>206</p>
+                          </td>
+                          <td width="414">
+                            <p>Partial Content</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>207</p>
+                          </td>
+                          <td width="414">
+                            <p>Multi-Status</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>208</p>
+                          </td>
+                          <td width="414">
+                            <p>Already Reported</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>226</p>
+                          </td>
+                          <td width="414">
+                            <p>IM Used</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>&nbsp;</p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p><u>3xx Redirection</u></p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>300</p>
+                          </td>
+                          <td width="414">
+                            <p>Multiple Choices</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>301</p>
+                          </td>
+                          <td width="414">
+                            <p>Moved Permanently</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>302</p>
+                          </td>
+                          <td width="414">
+                            <p>
+                              Found (Previously &quot;Moved Temporarily&quot;)
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>303</p>
+                          </td>
+                          <td width="414">
+                            <p>See Other</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>304</p>
+                          </td>
+                          <td width="414">
+                            <p>Not Modified</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>305</p>
+                          </td>
+                          <td width="414">
+                            <p>Use Proxy</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>306</p>
+                          </td>
+                          <td width="414">
+                            <p>Switch Proxy</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>307</p>
+                          </td>
+                          <td width="414">
+                            <p>Temporary Redirect</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>308</p>
+                          </td>
+                          <td width="414">
+                            <p>Permanent Redirect</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>&nbsp;</p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p><u>4xx Client Error</u></p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>400</p>
+                          </td>
+                          <td width="414">
+                            <p>Bad Request</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>401</p>
+                          </td>
+                          <td width="414">
+                            <p>Unauthorized</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>402</p>
+                          </td>
+                          <td width="414">
+                            <p>Payment Required</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>403</p>
+                          </td>
+                          <td width="414">
+                            <p>Forbidden</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>404</p>
+                          </td>
+                          <td width="414">
+                            <p>Not Found</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>405</p>
+                          </td>
+                          <td width="414">
+                            <p>Method Not Allowed</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>406</p>
+                          </td>
+                          <td width="414">
+                            <p>Not Acceptable</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>407</p>
+                          </td>
+                          <td width="414">
+                            <p>Proxy Authentication Required</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>408</p>
+                          </td>
+                          <td width="414">
+                            <p>Request Timeout</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>409</p>
+                          </td>
+                          <td width="414">
+                            <p>Conflict</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>410</p>
+                          </td>
+                          <td width="414">
+                            <p>Gone</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>411</p>
+                          </td>
+                          <td width="414">
+                            <p>Length Required</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>412</p>
+                          </td>
+                          <td width="414">
+                            <p>Precondition Failed</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>413</p>
+                          </td>
+                          <td width="414">
+                            <p>Payload Too Large</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>414</p>
+                          </td>
+                          <td width="414">
+                            <p>URI Too Long</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>415</p>
+                          </td>
+                          <td width="414">
+                            <p>Unsupported Media Type</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>416</p>
+                          </td>
+                          <td width="414">
+                            <p>Range Not Satisfiable</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>417</p>
+                          </td>
+                          <td width="414">
+                            <p>Expectation Failed</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>418</p>
+                          </td>
+                          <td width="414">
+                            <p>I&#39;m a Teapot</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>421</p>
+                          </td>
+                          <td width="414">
+                            <p>Misdirected Request</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>422</p>
+                          </td>
+                          <td width="414">
+                            <p>Unprocessable Entity</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>423</p>
+                          </td>
+                          <td width="414">
+                            <p>Locked</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>424</p>
+                          </td>
+                          <td width="414">
+                            <p>Failed Dependency</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>425</p>
+                          </td>
+                          <td width="414">
+                            <p>Too Early</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>426</p>
+                          </td>
+                          <td width="414">
+                            <p>Upgrade Required</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>428</p>
+                          </td>
+                          <td width="414">
+                            <p>Precondition Required</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>429</p>
+                          </td>
+                          <td width="414">
+                            <p>Too Many Requests</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>431</p>
+                          </td>
+                          <td width="414">
+                            <p>Request Header Fields Too Large</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>451</p>
+                          </td>
+                          <td width="414">
+                            <p>Unavailable For Legal Reasons</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>&nbsp;</p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p><u>5xx Server Error</u></p>
+                          </td>
+                          <td width="414">
+                            <p>&nbsp;</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>500</p>
+                          </td>
+                          <td width="414">
+                            <p>Internal Server Error</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>501</p>
+                          </td>
+                          <td width="414">
+                            <p>Not Implemented</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>502</p>
+                          </td>
+                          <td width="414">
+                            <p>Bad Gateway</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>503</p>
+                          </td>
+                          <td width="414">
+                            <p>Service Unavailable</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>504</p>
+                          </td>
+                          <td width="414">
+                            <p>Gateway Timeout</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>505</p>
+                          </td>
+                          <td width="414">
+                            <p>HTTP Version Not Supported</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>506</p>
+                          </td>
+                          <td width="414">
+                            <p>Variant Also Negotiates</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>507</p>
+                          </td>
+                          <td width="414">
+                            <p>Insufficient Storage</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>508</p>
+                          </td>
+                          <td width="414">
+                            <p>Loop Detected</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>510</p>
+                          </td>
+                          <td width="414">
+                            <p>Not Extended</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="251">
+                            <p>511</p>
+                          </td>
+                          <td width="414">
+                            <p>Network Authentication Required</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <p>&nbsp;</p>
+
+                    <h2 id="hd-xwp6">
+                      <strong
+                        >A Detailed Explanation of All HTTP Status Codes</strong
+                      >
+                    </h2>
+
+                    <p>
+                      <img
+                        alt=""
+                        class="cntimg"
+                        decoding="async"
+                        loading="lazy"
+                        src="../images/shares/Blogimages/markus-spiske-PsRUMc7vilg-unsplash.jpg"
+                        style="width: 640px; height: 427px"
+                      />
+                    </p>
+
+                    <p>
+                      Each of the HTTP status codes listed earlier shares
+                      different meanings. Read below to understand the meaning
+                      of all the status codes discussed in five different
+                      categories.
+                    </p>
+
+                    <h3 id="hd-66mmw">
+                      <strong>1XX HTTP Status Codes</strong>
+                    </h3>
+
+                    <p>
+                      A 1XX HTTP status code is a temporary one that is given
+                      during the continuity of a processing request. Most users
+                      do not come across it as it is not the final response. It
+                      is further divided into four different categories.
+                    </p>
+
+                    <h4 id="hd-i5zzs"><strong>100 &ndash; Continue</strong></h4>
+
+                    <p>
+                      This code means that the server has successfully received
+                      the first part of the browser&rsquo;s request. As soon as
+                      it accepts and processes the entire request, the final
+                      response will be delivered.
+                    </p>
+
+                    <p>
+                      As a result, the user must keep sending the request while
+                      ignoring the status code.
+                    </p>
+
+                    <h4 id="hd-9hnea">
+                      <strong>101 &ndash; Switching Protocols</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server understands the
+                      header field request termed as
+                      &lsquo;<strong>Upgrade</strong>&rsquo; and will further
+                      comply with the application protocol&rsquo;s change.
+                    </p>
+
+                    <p>
+                      However, the user must know that this response only
+                      happens in case the server finds it beneficial.
+                    </p>
+
+                    <h4 id="hd-75jc3">
+                      <strong>102 &ndash; Processing</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server has successfully
+                      received the entire request and is now processing it. Do
+                      not expect any response at this point as the request is
+                      still under process.
+                    </p>
+
+                    <p>
+                      A user may only come across this status code in case the
+                      request takes more than a regular time to finish.
+                    </p>
+
+                    <h4 id="hd-s2s7q">
+                      <strong>103 &ndash; Early Hints</strong>
+                    </h4>
+
+                    <p>
+                      This status code is utilized along with the link header.
+                      It lets the browser preload accessory resources as the
+                      server prepares for a response in the meantime.
+                    </p>
+
+                    <h3 id="hd-mt2ze">
+                      <strong>2XX HTTP Status Codes</strong>
+                    </h3>
+
+                    <p>
+                      A website owner is most interested in viewing a 2XX status
+                      code. It denotes the successful processing, understanding,
+                      and acceptance of a request by the server. Also, it helps
+                      in making sure that all web pages are resources that
+                      return a code from this particular category.
+                    </p>
+
+                    <p>
+                      It proves that any browser can reach our website easily,
+                      and visitors can use it without encountering errors. These
+                      codes are further divided into 10 different categories.
+                    </p>
+
+                    <h4 id="hd-lebr2"><strong>200 &ndash; Ok</strong></h4>
+
+                    <p>
+                      This status code indicates that this request was
+                      successfully received. However, its overall response
+                      depends on the request method used. There exist eight
+                      different request methods.
+                    </p>
+
+                    <ul>
+                      <li>
+                        GET &ndash; It requests a particular resource
+                        representative and is used to retrieve data only.
+                      </li>
+                      <li>
+                        HEAD &ndash; It requests a method similar to GET, but it
+                        is independent of a message body.
+                      </li>
+                      <li>
+                        POST &ndash; It submits an entity to the assigned
+                        resource while altering the server&rsquo;s state.
+                      </li>
+                      <li>
+                        PUT &ndash; It replaces the entire resource
+                        representations with the help of the request payload.
+                      </li>
+                      <li>
+                        DELETE &ndash; It removes the response specified by the
+                        server.
+                      </li>
+                      <li>
+                        OPTIONS &ndash; It defines multiple communication
+                        options specified for the resource.
+                      </li>
+                      <li>
+                        TRACE &ndash; It performs a&nbsp;<a
+                          href="https://www.techopedia.com/definition/25794/loopback-test"
+                          rel="nofollow"
+                          target="_blank"
+                          >message loop-back test</a
+                        >&nbsp;from the path to the assigned resource.
+                      </li>
+                      <li>PATCH &ndash; It partially modifies a resource.</li>
+                    </ul>
+
+                    <h4 id="hd-la7en"><strong>201 &ndash; Created</strong></h4>
+
+                    <p>
+                      This status code means that the server has successfully
+                      completed the request while creating one or more new
+                      resources. You can consider it as a typical response send
+                      it is a non-capital status directly after
+                      a&nbsp;<strong>POST</strong>&nbsp;or
+                      a&nbsp;<strong>PUT</strong>&nbsp;method.
+                    </p>
+
+                    <h4 id="hd-4c695"><strong>202 &ndash; Accepted</strong></h4>
+
+                    <p>
+                      This status code means that the request is accepted for
+                      processing by the server but is incomplete yet. It is a
+                      non-committal status, which means that the request may or
+                      may not be completed while the overall processing takes
+                      place.
+                    </p>
+
+                    <h4 id="hd-90ph4">
+                      <strong>203 &ndash; Non-Authoritative Response</strong>
+                    </h4>
+
+                    <p>
+                      This status code indicates a successful request. However,
+                      the original information sent by the browser has been
+                      altered by a transforming proxy. As a result, the server
+                      is forced to copy data from a third party.
+                    </p>
+
+                    <p>
+                      Also, this code informs a recipient about any change in
+                      the information to prevent any impact on the final
+                      response. That is why this code is usually used to mirror
+                      or backup another resource.
+                    </p>
+
+                    <h4 id="hd-f068s">
+                      <strong>204 &ndash; No Content</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the request is completed by
+                      the server. However, there is no further content available
+                      to send as a response.
+                    </p>
+
+                    <p>
+                      In this case, the user agent often updates the cached
+                      headers for the new resource.
+                    </p>
+
+                    <h4 id="hd-0u8gz">
+                      <strong>205 &ndash; Reset Content</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server has successfully
+                      fulfilled the request. However, the user is said to reset
+                      the document view to its original state.
+                    </p>
+
+                    <h4 id="hd-ck8u7">
+                      <strong>206 &ndash; Partial Content</strong>
+                    </h4>
+
+                    <p>
+                      This status code is sent by the server in response to
+                      a&nbsp;<strong>Range</strong>&nbsp;header sent by a client
+                      who tends to request only a part of the resource.
+                    </p>
+
+                    <h4 id="hd-0duvl">
+                      <strong>207 &ndash; Multi-Status</strong>
+                    </h4>
+
+                    <p>
+                      This status code is used to convey the status of multiple
+                      resources. Also, the server uses this code in situations
+                      like partial, success, or failure.
+                    </p>
+
+                    <h4 id="hd-s38ee">
+                      <strong>208 &ndash; Already Reported</strong>
+                    </h4>
+
+                    <p>
+                      This status code is used inside the response
+                      element&nbsp;<a
+                        href="https://learn.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2003/aa142983(v=exchg.65)"
+                        rel="nofollow"
+                        target="_blank"
+                        >DAV: propstat</a
+                      >. It restricts enumerating the multiple binding&rsquo;s
+                      internal members to the same collection repeatedly.
+                    </p>
+
+                    <h4 id="hd-jgo55"><strong>226 &ndash; IM Used</strong></h4>
+
+                    <p>
+                      This status code indicates that the server has
+                      successfully completed
+                      the&nbsp;<strong>GET</strong>&nbsp;request. Whereas its
+                      response indicates that the resource was implemented by
+                      one or more instance manipulations.
+                    </p>
+
+                    <h3 id="hd-qzpv"><strong>3XX HTTP Status Codes</strong></h3>
+
+                    <p>
+                      Redirects are not harmful to any website. Thus, they must
+                      be handled normally. A 3XX redirection HTTP status code
+                      means that the request was completed, but the resource was
+                      found at another location.
+                    </p>
+
+                    <p>
+                      Often when users try to access a website from an old URL,
+                      it gets redirected to the new location. These codes are
+                      further divided into nine categories.
+                    </p>
+
+                    <h4 id="hd-4m98i">
+                      <strong>300 &ndash; Multiple Choices</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the request offers multiple
+                      possible responses. Thus, the user is said to choose one
+                      among these. If the request method is other than HEAD, the
+                      response will come up with a list of locations and
+                      resource characteristics to help the user agent choose
+                      easily.
+                    </p>
+
+                    <h4 id="hd-vxbqc">
+                      <strong>301 &ndash; Moved Permanently</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the requested resource has
+                      been permanently moved to a new URL. Any differences to
+                      this resource in the future must utilize one of the new
+                      addresses listed in the response.
+                    </p>
+
+                    <h4 id="hd-gfwhd">
+                      <strong
+                        >302 &ndash; Found (Previously, &lsquo;Moved
+                        Temporarily&#39;)</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code was previously known as&nbsp;<strong
+                        >Moved Temporarily</strong
+                      >. It means that the requested resource is temporarily
+                      moved to a new URL. Therefore, any requests in the future
+                      must be directed to the current resource address included
+                      in the response.
+                    </p>
+
+                    <p>
+                      In case the user uses
+                      the&nbsp;<strong>HEAD</strong>&nbsp;request method, the
+                      server response would include a hypertext note that
+                      mentions a link to the new temporary URL. However, if this
+                      method is not used, a user will not be redirected to the
+                      new URL without seeking permission.
+                    </p>
+
+                    <h4 id="hd-xapbo">
+                      <strong>303 &ndash; See Other</strong>
+                    </h4>
+
+                    <p>
+                      This status code is sent by the server to redirect the
+                      user to a different URL using
+                      the&nbsp;<strong>GET</strong>&nbsp;method.
+                    </p>
+
+                    <h4 id="hd-9kaob">
+                      <strong>304 &ndash; Not Modified</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the response has not
+                      encountered any modification. Hence, the client is free to
+                      use the cached version of the requested URL. Most often,
+                      it happens if the client utilizes
+                      the&nbsp;<strong>GET</strong>&nbsp;or&nbsp;<strong>HEAD</strong>&nbsp;request
+                      method.
+                    </p>
+
+                    <p>
+                      Alternatively, it can happen if the
+                      headers&nbsp;<strong>If-None-Match</strong>&nbsp;or&nbsp;<strong>If-Modified-Since</strong>&nbsp;are
+                      used. There are a few ways to&nbsp;<a
+                        href="https://www.hostinger.com/tutorials/304-status-code"
+                        rel="nofollow"
+                        target="_blank"
+                        >fix the 304 HTTP status code</a
+                      >&nbsp;and get back to work.
+                    </p>
+
+                    <h4 id="hd-atvi8">
+                      <strong
+                        >305 &ndash; Unused (Previously &lsquo;Use
+                        Proxy&rsquo;)</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code was previously known as&nbsp;<strong
+                        >Use Proxy</strong
+                      >. As the name implies, it is used by the server to ask
+                      the client to access the requested resource by using a
+                      proxy. The response will also include the URL within the
+                      location field.
+                    </p>
+
+                    <h4 id="hd-4bx0w">
+                      <strong
+                        >306 &ndash; Unused (&lsquo;Switch Proxy&rsquo;)</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code was previously known as&nbsp;<strong
+                        >Switch Proxy</strong
+                      >. It was used by the server to inform the client to
+                      access the requested resource through a particular proxy.
+                    </p>
+
+                    <p>
+                      However, this code is no longer in use and is reserved for
+                      any use in the future.
+                    </p>
+
+                    <h4 id="hd-fzt5w">
+                      <strong>307 &ndash; Temporary Redirect</strong>
+                    </h4>
+
+                    <p>
+                      This status code is used by the server to temporarily
+                      redirect the client to a new resource address. Because it
+                      is a temporary redirection, the requested method may
+                      remain the same.
+                    </p>
+
+                    <h4 id="hd-za47p">
+                      <strong>308 &ndash; Permanent Redirect</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the requested URL has been
+                      permanently moved to a new resource mentioned in the
+                      header. It is considered a code similar to the 301 HTTP
+                      status code. However, it slightly differs because the
+                      client is restricted to change the request method in this
+                      case.
+                    </p>
+
+                    <h3 id="hd-6sdle">
+                      <strong>4XX HTTP Status Codes</strong>
+                    </h3>
+
+                    <p>
+                      A website owner must do everything to avoid these status
+                      codes. A 4XX status code indicates that the user will not
+                      be able to find what they are looking for on a website.
+                    </p>
+
+                    <p>
+                      It leads to a bad user experience and is further divided
+                      into multiple types.
+                    </p>
+
+                    <h4 id="hd-nx8xy">
+                      <strong>400 &ndash; Bad Request</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server could not complete
+                      the request as a result of a client-side error such as bad
+                      syntax. Also, the user is advised to modify the syntax and
+                      request.
+                    </p>
+
+                    <p>
+                      If the 400 HTTP error occurs continuously, the user can
+                      clear cookies on the browser cache.
+                    </p>
+
+                    <h4 id="hd-8omcj">
+                      <strong>401 &ndash; Unauthorized</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the request has not been
+                      accessed by the server as it requires user authentication.
+                    </p>
+
+                    <h4 id="hd-8scdw">
+                      <strong>402 &ndash; Payment Required</strong>
+                    </h4>
+
+                    <p>
+                      This status code is an error response reserved for use in
+                      the future. It was originally used in digital payment
+                      systems but does not exist anymore.
+                    </p>
+
+                    <h4 id="hd-s8yvp">
+                      <strong>403 &ndash; Forbidden</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server has received the
+                      request, but the client does not have enough rights to
+                      access the resource. In case the request contains any
+                      authentication credentials, the server may have considered
+                      them insufficient.
+                    </p>
+
+                    <h4 id="hd-vel82">
+                      <strong>404 &ndash; Not Found</strong>
+                    </h4>
+
+                    <p>
+                      <img
+                        alt=""
+                        class="cntimg"
+                        decoding="async"
+                        loading="lazy"
+                        src="../images/shares/Blogimages/erik-mclean-bGWVhFY1gH0-unsplash.jpg"
+                        style="width: 600px; height: 399px"
+                      />
+                    </p>
+
+                    <p>
+                      We often come across the&nbsp;<a
+                        href="http://C:/Users/Tajirz/OneDrive/Documents/What%20Is%20a%20404%20Error?%20How%20to%20Deal%20With%20the%20Web%20Error"
+                        rel="nofollow"
+                        target="_blank"
+                        >404 error</a
+                      >&nbsp;and keep looking for ways to fix it. It means that
+                      the server is unable to find the requested resource or is
+                      trying to hide it from an unauthorized user. Most often,
+                      the links that lead to this type of error code are known
+                      as dead or broken links.
+                    </p>
+
+                    <p>
+                      You could also look for ways to&nbsp;<a
+                        class="in"
+                        href="https://Needle Tip.com/blog/internal-linking-to-improve-crawl-rate-in-seo#hd-aplxf"
+                        >repair and monitor broken links</a
+                      >&nbsp;in this case.
+                    </p>
+
+                    <h4 id="hd-l02wi">
+                      <strong>405 &ndash; Method Not Allowed</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server has recognized the
+                      requested method but does not approve it as it is not
+                      allowed.
+                    </p>
+
+                    <h4 id="hd-p8u1s">
+                      <strong>406 &ndash; Not Acceptable</strong>
+                    </h4>
+
+                    <p>
+                      This status code is sent by the server as an invalid
+                      response. It means that the server is unable to find any
+                      authentic content for the requested resource.
+                    </p>
+
+                    <p>
+                      The server further displays a list of identifiers and
+                      corresponding resources to help the client choose an
+                      appropriate one.
+                    </p>
+
+                    <h4 id="hd-akhge">
+                      <strong>407 &ndash; Proxy Authentication Required</strong>
+                    </h4>
+
+                    <p>
+                      This status code is similar to the&nbsp;<a
+                        href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiRu9ej9bj7AhXEg_0HHXRnBq4QFnoECA0QAw&amp;url=https%3A%2F%2Fwww.hostinger.com%2Ftutorials%2Fhow-to-fix-the-401-unauthorized-error&amp;usg=AOvVaw1DSpOSRrqQzOuP7zl_ujjX"
+                        rel="nofollow"
+                        target="_blank"
+                        >401 HTTP error code</a
+                      >. It means that the user must be able to provide
+                      authentication credentials for the requested URL.
+                    </p>
+
+                    <h4 id="hd-jker6">
+                      <strong>408 &ndash; Request Timeout</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      receive the complete message within the given duration. It
+                      may occur sometimes due to a poor connection.
+                    </p>
+
+                    <h4 id="hd-a8tt7"><strong>409 &ndash; Conflict</strong></h4>
+
+                    <p>
+                      This status code means that the server is unable to
+                      complete the request due to a conflict with the requested
+                      resource. Also, the information regarding the problem is
+                      displayed to make sure the user can fix it and continue.
+                    </p>
+
+                    <h4 id="hd-9b4b2"><strong>410 &ndash; Gone</strong></h4>
+
+                    <p>
+                      This status code means that the requested URL is moved
+                      permanently without the addition of any forwarding
+                      address. It indicates that the website owner has done it
+                      intentionally and wishes to remove any leading links to
+                      this URL.<br />
+                      As a result, search engines remove this page permanently
+                      from the index as soon as the code occurs.
+                    </p>
+
+                    <h4 id="hd-qikw7">
+                      <strong>411 &ndash; Length Required</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server rejected the
+                      requested resource as it requires
+                      a&nbsp;<strong>Content-Length</strong>&nbsp;header.
+                    </p>
+
+                    <h4 id="hd-tc6b6">
+                      <strong>412 &ndash; Precondition Failed</strong>
+                    </h4>
+
+                    <p>
+                      This status code indicates that the server failed to meet
+                      one or more free conditions discussed in the request
+                      header field.
+                    </p>
+
+                    <h4 id="hd-00sg7">
+                      <strong>413 &ndash; Payload Too Large</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server refuses to accept
+                      the request because the payload is larger than the
+                      server&#39;s limit to accept or process.
+                    </p>
+
+                    <h4 id="hd-dq9uc">
+                      <strong>414 &ndash; URL Too Long</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server refuses to
+                      interpret the requested resource because the URL is too
+                      long.
+                    </p>
+
+                    <h4 id="hd-89rdx">
+                      <strong>415 &ndash; Unsupported Media Type</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server has refused the
+                      client&#39;s request because the resource uses an
+                      unsupported media format.
+                    </p>
+
+                    <h4 id="hd-96q4o">
+                      <strong>416 &ndash; Range Not Satisfiable</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server is unable to
+                      fulfill the user&#39;s request. It happens because the
+                      resource does not contain the specified range or its value
+                      is invalid.
+                    </p>
+
+                    <h4 id="hd-7wlyp">
+                      <strong>417 &ndash; Expectation Failed</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to meet
+                      the requirements indicated by the request header
+                      field&nbsp;<strong>Expect</strong>.
+                    </p>
+
+                    <h4 id="hd-80et8">
+                      <strong
+                        >418 &ndash; Unused (Previously &lsquo;I&#39;m a
+                        Teapot&rsquo;)</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code was previously known as&nbsp;<strong
+                        >I&rsquo;m a teapot</strong
+                      >. It was a reference to an old 1998 April fool&rsquo;s
+                      joke entitled &ldquo;Hypertext Coffee Pot Control
+                      Protocol.&rdquo; It indicated that the server rejects to
+                      brew coffee as it is a teapot.
+                    </p>
+
+                    <p>
+                      Currently, this status code is reserved for future use.
+                    </p>
+
+                    <h4 id="hd-ath03">
+                      <strong>421 &ndash; Misdirected Request</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the client has requested
+                      resources from a server that is not configured to produce
+                      any response.
+                    </p>
+
+                    <h4 id="hd-d5hd2">
+                      <strong>422 &ndash; Unprocessable Entity</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the client has requested
+                      resources from the right server, but it is still unable to
+                      process them because of semantic errors.
+                    </p>
+
+                    <h4 id="hd-141s2"><strong>423 &ndash; Locked</strong></h4>
+
+                    <p>
+                      This status code indicates that the request methods
+                      resource has been locked. Such type of a server response
+                      most probably contains a precondition or a post-condition
+                      code. For
+                      instance,&nbsp;<strong>Lock-Token-Submitted</strong>&nbsp;or&nbsp;<strong>No-Conflicting-Lock</strong>&nbsp;respectively.
+                    </p>
+
+                    <h4 id="hd-ul49">
+                      <strong>424 &ndash; Failed Dependency</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the request has failed because
+                      it was dependent on another request, which failed as well.
+                    </p>
+
+                    <h4 id="hd-ks9f2">
+                      <strong>425 &ndash; Too Early</strong>
+                    </h4>
+
+                    <p>
+                      &nbsp;This status code means that the server is refusing
+                      to process a request as it may be replayed.
+                    </p>
+
+                    <h4 id="hd-2rs9">
+                      <strong>426 &ndash; Upgrade Required</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server refuses to process
+                      the request unless the user agent upgrades to a different
+                      protocol.
+                    </p>
+
+                    <h4 id="hd-ioh7h">
+                      <strong>428 &ndash; Precondition Required</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server requires
+                      a&nbsp;<strong>Conditional Request</strong>&nbsp;to ensure
+                      the authenticity of the user agent.
+                    </p>
+
+                    <h4 id="hd-c5asj">
+                      <strong>429 &ndash; Too Many Requests</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the client has sent too many
+                      requests together. In response, the server tries to
+                      explain it to the user through
+                      a&nbsp;<strong>Retry-After</strong>&nbsp;header. It helps
+                      to understand how long the client has to wait before
+                      sending another request.
+                    </p>
+
+                    <h4 id="hd-xyar3">
+                      <strong
+                        >431 &ndash; Request Header Fields Too Large</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code means that the server has refused to
+                      process the request because the header fields are too
+                      large. To fix this type of error, the user must be able to
+                      reduce the size of the request header.
+                    </p>
+
+                    <h4 id="hd-ue949">
+                      <strong>451 &ndash; Unavailable For Legal Reasons</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the client has requested a
+                      resource from the server that has been removed due to
+                      legal reasons. For instance, blocked web pages or web
+                      websites. This type of code can directly impact search
+                      engines.
+                    </p>
+
+                    <h3 id="hd-630ca">
+                      <strong>5XX HTTP Status Codes</strong>
+                    </h3>
+
+                    <p>
+                      Website owners facing 5XX HTTP server errors must look out
+                      for their servers immediately. Owners who host their
+                      websites can try debugging to fix the issue. In case you
+                      are using an external host provider, get in touch with
+                      them and solve the problem.
+                    </p>
+
+                    <p>
+                      These status codes are further divided into multiple
+                      categories.
+                    </p>
+
+                    <h4 id="hd-txlof">
+                      <strong>500 &ndash; Internal Server Error</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      process the request because an unexpected error prevented
+                      it from doing so.
+                    </p>
+
+                    <h4 id="hd-sqbm">
+                      <strong>501 &ndash; Not Implemented</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server will not complete
+                      the client&#39;s request because it requires a method that
+                      is not supported. The easiest methods that the server
+                      support
+                    </p>
+
+                    <h4 id="hd-z3jos">
+                      <strong>502 &ndash; Bad Gateway</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      fulfill the client&#39;s request because it came across an
+                      invalid response.
+                    </p>
+
+                    <h4 id="hd-a0y4">
+                      <strong>503 &ndash; Service Unavailable</strong>
+                    </h4>
+
+                    <p>
+                      This status quote means that the server is currently
+                      unable to handle the request and is unavailable at the
+                      moment. It usually happens when the server is down due to
+                      an overload or for maintenance.
+                    </p>
+
+                    <h3 id="hd-hk95k">
+                      <strong>504 &ndash; Gateway Timeout</strong>
+                    </h3>
+
+                    <p>
+                      <a
+                        href="https://kinsta.com/blog/504-gateway-timeout/"
+                        rel="nofollow"
+                        target="_blank"
+                        ><img
+                          alt=""
+                          class="cntimg"
+                          decoding="async"
+                          loading="lazy"
+                          src="../images/shares/cloudflare-504-gateway-timeout.png"
+                          style="width: 600px; height: 413px"
+                      /></a>
+                    </p>
+
+                    <p>
+                      This status code indicates that the server was unable to
+                      complete the user agent&#39;s request because it did not
+                      receive the required response within the given duration.
+                    </p>
+
+                    <h4 id="hd-cw7sb">
+                      <strong>505 &ndash; HTTP Version Not Supported</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      process because the request contained an unsupportive HTTP
+                      format. Also, the response contains an explanation of this
+                      problem and offers alternate solutions.
+                    </p>
+
+                    <h4 id="hd-knd79">
+                      <strong>506 &ndash; Variant Also Negotiates</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      process the request because of an internal configuration
+                      error. It also states that the chosen variant resource is
+                      configured to engage in&nbsp;<a
+                        href="https://www.oreilly.com/library/view/http-the-definitive/1565925092/ch17s04.html"
+                        rel="nofollow"
+                        target="_blank"
+                        >transparent negotiation</a
+                      >&nbsp;itself.
+                    </p>
+
+                    <h4 id="hd-8n959">
+                      <strong>507 &ndash; Insufficient Storage</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server is unable to
+                      process the client request because it does not have enough
+                      storage for the presentation that is needed to access the
+                      request.
+                    </p>
+
+                    <h4 id="hd-fu7el">
+                      <strong>508 &ndash; Loop Detected</strong>
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      process the request because it came across an infinite
+                      loop known as&nbsp;<strong>Depth: Infinity</strong>. It
+                      indicates to the user that the entire process has failed.
+                    </p>
+
+                    <h4 id="hd-d0q9u">
+                      <strong
+                        >510 &ndash; Unused (Previously &lsquo;Not
+                        Extended&rsquo;)</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code means that the server was unable to
+                      process the client request because it requires further
+                      extensions. Henceforth, it asks the user to resend the
+                      request while extending it.
+                    </p>
+
+                    <h4 id="hd-w7rdh">
+                      <strong
+                        >511 &ndash; Network Authentication Required</strong
+                      >
+                    </h4>
+
+                    <p>
+                      This status code indicates that the server was unable to
+                      process the request as it requires client authentication.
+                      Also, it offers a link where the client can easily share
+                      the credentials required.
+                    </p>
+
+                    <h2 id="hd-ztp21"><strong>Wrap Up</strong></h2>
+
+                    <p>
+                      The long story of HTTP status codes seems confusing and
+                      messy. Nevertheless, learning this can help you resolve
+                      multiple website issues quickly. These can be considered
+                      basic requirements for a website user.<br />
+                      As a business owner, there are certain&nbsp;<a
+                        class="in"
+                        href="https://Needle Tip.com/blog/things-you-should-consider-before-hiring-any-digital-marketing-agency"
+                        >things you should consider before hiring any digital
+                        marketing agency</a
+                      >. Similarly, as a website owner, knowing a few HTTP
+                      status codes can be really helpful.
+                    </p>
+                    <div
+                      class="post_link text-center"
+                      style="margin-bottom: 35px"
+                    >
+                      <a
+                        href="what-is-react.html"
+                        class="btn btn-color no-popup"
+                        title="What is React and Why do we use it?"
+                      >
+                        <i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Previous
+                      </a>
+                      <a
+                        href="django-vs-laravel.html"
+                        class="btn btn-color no-popup"
+                        title="Django vs. Laravel: Which Framework Will Be the Right Choice In 2025?"
+                      >
+                        Next &nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="author-box" id="author-items">
+                  <div class="authorDetail">
+                    <div class="author-info">
+                      <div class="authorName">
+                        <a class="author-h" href="author/john-fernandes.html">
+                          John Fernandes
+                        </a>
+                      </div>
+                    </div>
+                    <div class="author-bio">
+                      <p>
+                        John Fernandes&nbsp;is content writer&nbsp;at Needle
+                        Tip, An expert in producing engaging and informative
+                        research-based articles and blog posts. His passion to
+                        disseminate fruitful information fuels his&nbsp;passion
+                        for writing.
+                      </p>
+                    </div>
+                    <div class="authorName">
+                      <ul></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="sidebar" style="position: sticky; top: 120px">
+                <!-- <div class="ctaForm mt-4">
+                                    <div class="ctaCtn">
+                                        <p class="hdg-xl-d">How is your <br> website's SEO?</p>
+                                        <p class="ctnSubH"> Use our free tool to get your score calculated in under 60 seconds
+                                        </p>
+                                    </div>
+                                    <div class="ctaFeilds mt-3">
+                                        <form action="/contact-us" class="noajax">
+                                            <input type="text" class="form-control urlField" name="website"
+                                                placeholder="https://www.your-url.com" required>
+                                            <button type="submit" class="d-btn3 mt-3">Get Your SEO Score</button>
+                                        </form>
+                                    </div>
+                                </div> -->
+                <div class="sidebar-subscribe-box">
+                  <div class="subscribe-heading">
+                    Subscribe to Unlock<br />Exclusive Business Insights!
+                  </div>
+                  <div class="subscribe-subheading">
+                    Our kind, happy and humble customer support team would love
+                    to answer your questions. Send us an email or call to speak
+                    with an actual human.
+                  </div>
+                  <form
+                    class="subscribe-form-ui"
+                    action="https://support@Needle Tip.com/submit/blog"
+                    method="post"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="0HHawM0l7qK3gNupoRARuMDryP8XD01Lb9jqDXY1"
+                    />
+                    <input type="hidden" name="form" value="NMY^%%t#bLSCVQ" />
+
+                    <div class="col-md-12">
+                      <input
+                        type="text"
+                        name="name"
+                        value=""
+                        class="form-control font-sm"
+                        placeholder="Name"
+                        data-validation="required|length|alphanumeric"
+                        data-validation-allowing=" "
+                        data-validation-length="min4 max64"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <input
+                        type="email"
+                        name="email"
+                        value=""
+                        class="form-control font-sm"
+                        placeholder="Email"
+                        data-validation="required|email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="tel"
+                        name="typed-phone"
+                        value=""
+                        class="form-control font-sm inp-phone"
+                        placeholder="Phone"
+                        data-validation="required"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control font-sm"
+                        name="message"
+                        rows="3"
+                        placeholder="Message"
+                        data-validation="required"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="terms"
+                          id="terms-"
+                          data-validation="required"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="terms-"
+                          style="font-size: 14px; color: #333"
+                        >
+                          By submitting this form, I agree to receive
+                          non-automated SMS updates, payment info, and
+                          service-related messages from Needle Tip. Consent
+                          isn't required for purchase. Msg & data rates may
+                          apply. Reply HELP for help or STOP to opt out.
+                          <a target="_blank" href="../terms-and-conditions.html"
+                            >Terms & Conditions</a
+                          >
+                          &
+                          <a target="_blank" href="../privacy-policy.html"
+                            >Privacy Policy</a
+                          >
+                        </label>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="subscribe-btn">
+                      Schedule a Free Consultation!
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="related-sec">
+      <div class="container">
+        <h2 class="section-title">Related articles</h2>
+
+        <div class="slider-container">
+          <button class="nav-button prev" id="prevBtn">
+            <span class="nav-arrow">‹</span>
+          </button>
+
+          <div class="slider-wrapper" id="sliderWrapper">
+            <div class="article-card">
+              <a
+                href="conversion-rate-optimization-checklist-2025.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-11/image-1763451910.jpg"
+                  alt="The High-Impact Conversion Rate Optimization Checklist: Every Marketer Needs in 2025"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a
+                    href="conversion-rate-optimization-checklist-2025.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      The High-Impact Conversion Rate Optimization Checklist:
+                      Every Marketer Needs in 2025
+                    </h3>
+                    <p class="card-description">
+                      Improve conversions with simple steps that make your site
+                      faster, clearer, and easier to use. Turn more visitors
+                      into cu...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/john-fernandes.html" class="author-name">
+                        John Fernandes
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">18 Nov 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="custom-vs-template-websites.html" class="card-link">
+                <img
+                  src="../images/shares/upload/2025-11/image-1762165901.jpg"
+                  alt="Custom vs. Template Websites: What Works Best for Los Angeles Businesses?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a href="custom-vs-template-websites.html" class="card-link">
+                    <h3 class="card-title">
+                      Custom vs. Template Websites: What Works Best for Los
+                      Angeles Businesses?
+                    </h3>
+                    <p class="card-description">
+                      Compare custom and template websites to find which fits
+                      your Los Angeles business best for design, cost, and
+                      long-term g...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/john-fernandes.html" class="author-name">
+                        John Fernandes
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">03 Nov 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="white-label-web-development.html" class="card-link">
+                <img
+                  src="../images/shares/upload/2025-10/image-1761129709.jpg"
+                  alt="White Label Web Development: What It Is And How It Works?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a href="white-label-web-development.html" class="card-link">
+                    <h3 class="card-title">
+                      White Label Web Development: What It Is And How It Works?
+                    </h3>
+                    <p class="card-description">
+                      Ever heard of a white label web development company?
+                      Explore how this kind of development is helping agencies
+                      to scale s...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/john-fernandes.html" class="author-name">
+                        John Fernandes
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">22 Oct 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a
+                href="list-of-questions-to-ask-before-hiring-a-web-development-company.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-10/image-1759910940.jpg"
+                  alt="List of Questions to Ask Before Hiring a Web Development Company for Your Project"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a
+                    href="list-of-questions-to-ask-before-hiring-a-web-development-company.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      List of Questions to Ask Before Hiring a Web Development
+                      Company for Your Project
+                    </h3>
+                    <p class="card-description">
+                      Ask the right questions before hiring a web development
+                      company to avoid delays, hidden costs, and poor results.
+                      Here’...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/robert-kevin.html" class="author-name">
+                        Robert Kevin
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">08 Oct 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="what-is-vibe-coding.html" class="card-link">
+                <img
+                  src="../images/shares/upload/2025-10/image-1759475578.jpg"
+                  alt="What is Vibe Coding? Everything You Know About Tools and Techniques"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a href="what-is-vibe-coding.html" class="card-link">
+                    <h3 class="card-title">
+                      What is Vibe Coding? Everything You Know About Tools and
+                      Techniques
+                    </h3>
+                    <p class="card-description">
+                      Discover the pros and cons of vibe coding, how it impacts
+                      software development, and how to get started.
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/ramsha-irfan.html" class="author-name">
+                        Ramsha Irfan
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">29 Sep 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a
+                href="how-to-create-a-landing-page-that-boosts-conversion-rate.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-09/image-1758713282.jpg"
+                  alt="How to Create a Landing Page That Boosts Conversion Rate?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a
+                    href="how-to-create-a-landing-page-that-boosts-conversion-rate.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      How to Create a Landing Page That Boosts Conversion Rate?
+                    </h3>
+                    <p class="card-description">
+                      Are you planning to experience a boost in sales, sign-ups,
+                      and leads for your platform online? Get ready to create a
+                      lan...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/ramsha-irfan.html" class="author-name">
+                        Ramsha Irfan
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">24 Sep 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <button class="nav-button next" id="nextBtn">
+            <span class="nav-arrow">›</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- Top CTA Section -->
+      <div class="footer-top">
+        <div class="container">
+          <p class="footer-head">
+            Take the first step towards the right direction
+          </p>
+          <div class="cta-container">
+            <!-- Phone CTA -->
+            <div class="cta-item">
+              <a href="tel:+6822358107" class="chat-style">
+                <div class="cta-icon">
+                  <img
+                    src="../assets/images/new-images/call-icon.png"
+                    alt="call-icon"
+                  />
+                </div>
+                <div class="cta-content">
+                  <div class="cta-title">+1(111) 111-1111</div>
+                  <div class="cta-subtitle">Call us anytime</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Portfolio Button -->
+            <div class="cta-item cta-button">
+              <a href="../free-quote.html" class="btn-cta">
+                Send me a Proposal
+                <i class="fa fa-long-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Chat CTA -->
+            <div class="cta-item">
+              <a href="javascript:void(Tawk_API.toggle())" class="chat-style">
+                <div class="cta-icon">
+                  <img
+                    src="../assets/images/new-images/chat.png"
+                    alt="chat-icon"
+                  />
+                </div>
+                <div class="cta-content">
+                  <div class="cta-title">Chat Live</div>
+                  <div class="cta-subtitle">to discuss your project</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Grid Section -->
+      <div class="services-grid">
+        <div class="container">
+          <div class="service-column">
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="../about-us.html">About US</a></li>
+              <li><a href="../contact-us.html">Contact US</a></li>
+              <li><a href="../blog.1.html">Blog</a></li>
+              <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
+              <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="../sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Services</h2>
+            <ul>
+              <li><a href="../logo-design-services.html">Logo Design</a></li>
+              <li><a href="../index.html">Web Design & Development</a></li>
+              <li>
+                <a href="../ecommerce-website-development.html">Ecommerce</a>
+              </li>
+              <li>
+                <a href="../digital-marketing-service.html"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a href="../software-development-services.html"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a href="../video-animation-services.html">Video & Animation</a>
+              </li>
+              <li>
+                <a href="../corporate-branding-services.html"
+                  >Corporate Branding</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Technologies</h2>
+            <ul>
+              <li>
+                <a href="../react-js-web-development-company.html">React</a>
+              </li>
+              <li><a href="../laravel-web-development.html">Laravel</a></li>
+              <li><a href="../php-web-development.html">PHP</a></li>
+              <li>
+                <a href="../wordpress-development-services.html">Wordpress</a>
+              </li>
+              <li><a href="../node-js-development-company.html">NodeJS</a></li>
+              <li><a href="../java-web-development.html">Java</a></li>
+              <li><a href="what-are-status-codes.html#">Python</a></li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Industries</h2>
+            <ul>
+              <li><a href="what-are-status-codes.html#">Real Estate</a></li>
+              <li><a href="what-are-status-codes.html#">Healthcare</a></li>
+              <li><a href="what-are-status-codes.html#">Fintech</a></li>
+              <li><a href="what-are-status-codes.html#">Logistics</a></li>
+            </ul>
+            <div class="s-icon">
+              <!-- Facebook -->
+              <a
+                target="_blank"
+                rel="noopener"
+                aria-label="Needle Tip Facebook"
+              >
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <!-- Instagram -->
+              <a
+                target="_blank"
+                rel="noopener"
+                aria-label="Needle Tip Instagram"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <!-- Pinterest -->
+              <a
+                target="_blank"
+                rel="noopener"
+                aria-label="Needle Tip Pinterest"
+              >
+                <i class="fa fa-pinterest"></i>
+              </a>
+              <a target="_blank" rel="noopener" aria-label="Needle Tip twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noopener"
+                aria-label="Needle Tip linkedin"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="footer-copyright mt-4">
+              All Rights Reserved! © 2025
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Locations Section -->
+      <!-- <div class="locations">
+        <div class="container-fluid">
+          <div class="location-card">
+            <h3><a href="../los-angeles-web-design.html">Los Angeles</a></h3>
+            <p>777 S Alameda St, Los Angeles, CA 90021</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../houston-web-design.html">Houston</a></h3>
+            <p>3730 Kirby Dr, Houston, TX 77098</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../new-york-web-design.html">New York</a></h3>
+            <p>250 Park Ave, New York, NY 10177</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../san-diego-web-design.html">San Diego</a></h3>
+            <p>3111 Camino Del Rio North Suite 400, San Diego CA 92108</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../new-jersey-web-design.html">New Jersey</a></h3>
+            <p>1040 Kings Hwy N, Cherry Hill Township, NJ 08034</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../chicago-web-design.html">Chicago</a></h3>
+            <p>203 N LaSalle St, Chicago, IL 60601</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../ohio-web-design.html">Ohio</a></h3>
+            <p>9341 Ellis Way, Strongsville, OH 44136</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="what-are-status-codes.html#">Euless</a></h3>
+            <p>300 East Ash Lane Euless, TX 76039</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Footer Border -->
+      <div class="footer-border"></div>
+    </footer>
+    <script src="../assets/plugins/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="../assets/plugins/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5fe1bbf1df060f156a8f4148/1eq4scam8";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="../build/js/main.js@id=77a73856ccfe6c3d5847"></script>
+    <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <script src="../assets/plugins/jquery-marquee/jquery.marquee.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdY8REsAAAAAHgYMrCiz5d1oqQuVvWrSBCCHSXH"></script>
+
+    <!--<script>
+    /*var phone_number = window.intlTelInput(document.querySelector("#phone"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+    var phone_number = window.intlTelInput(document.querySelector("#discount"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+    var phone_number = window.intlTelInput(document.querySelector("#popup"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+
+    var phone_number = window.intlTelInput(document.querySelector("#phone"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });*/
+
+
+</script>-->
+  </body>
+</html>

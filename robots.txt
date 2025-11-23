@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /*.css?id=*
+Allow: /*.js?id=*
+Allow: /*.css?v=*
+Allow: /*.js?v=*
+Disallow: /*?page
+Disallow: /*?page*
+Disallow: /embed
+Disallow: /embed/*
+Disallow: /cdn-cgi/*
+
+User-agent: *
+Sitemap: https://yourdigilab.com/sitemap.xml
+Sitemap: https://yourdigilab.com/blog/sitemap.xml

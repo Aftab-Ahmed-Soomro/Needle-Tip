@@ -1,0 +1,2546 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Angular 12 Vs Angular 13: What&#039;s the Difference and Features? -
+      YourDigiLab
+    </title>
+    <meta
+      property="og:title"
+      content="Angular 12 Vs Angular 13: What&#039;s the Difference and Features? - YourDigiLab"
+    />
+    <meta
+      name="twitter:title"
+      content="Angular 12 Vs Angular 13: What&#039;s the Difference and Features? - YourDigiLab"
+    />
+
+    <meta
+      name="description"
+      content="Do you know the difference between angular 12 and angular 13? Read here to find out their basic features at yourdigilab blog and pick the better one for your projects!"
+    />
+    <meta
+      property="og:description"
+      content="Do you know the difference between angular 12 and angular 13? Read here to find out their basic features at yourdigilab blog and pick the better one for your projects!"
+    />
+    <meta
+      name="twitter:card"
+      content="Do you know the difference between angular 12 and angular 13? Read here to find out their basic features at yourdigilab blog and pick the better one for your projects!"
+    />
+    <meta
+      name="twitter:description"
+      content="Do you know the difference between angular 12 and angular 13? Read here to find out their basic features at yourdigilab blog and pick the better one for your projects!"
+    />
+
+    <meta
+      property="og:image"
+      content="https://yourdigilab.com/images/shares/upload/2022-06/image-1654861383.jpg"
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourdigilab.com/images/shares/upload/2022-06/image-1654861383.jpg"
+    />
+
+    <link
+      rel="canonical"
+      href="https://yourdigilab.com/blog/angular-12-vs-angular-13"
+    />
+
+    <meta
+      property="og:url"
+      content="https://yourdigilab.com/blog/angular-12-vs-angular-13"
+    />
+
+    <meta
+      name="gcsk-token"
+      content="6LdY8REsAAAAAHgYMrCiz5d1oqQuVvWrSBCCHSXH"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-83154766-3"
+      defer
+    ></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-83154766-3");
+    </script>
+    <!-- Hotjar Tracking Code for https://yourdigilab.com/ -->
+    <script defer>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3036387, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script type="text/javascript" defer>
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gjnrlao7rw");
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "361392043644823");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=361392043644823&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <style>
+      .packages-section .main-box .content {
+        flex-wrap: wrap;
+        gap: 33px;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+        .packages-section .main-box .content {
+          flex-wrap: nowrap;
+        }
+      }
+    </style>
+    <meta
+      name="simpledcver"
+      content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJibHVlbGlnaHRjYW5uYWJpcy55b3VyZGlnaWxhYi5jb20iLCJleHAiOjE3MjU0OTQ0MDB9.om7xJmRKMWc3fYSjZiY2CIfLDHpZUdpG0655pim3dGY"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../build/fonts.css@id=dc084f7f925a8b069566.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../build/main.css@id=d0f367479f945b9ce054.css"
+    />
+
+    <!--fancy box-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"
+    />
+
+    <!--gallery box-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+      integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "YourDigiLab",
+        "legalName": "Your Digi Lab",
+        "url": "https://yourdigilab.com",
+        "logo": "https://yourdigilab.com/dark-logo.png",
+        "foundingDate": "2020",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "300 East Ash Lane Euless, TX 76039",
+          "addressLocality": "Euless",
+          "addressRegion": "TX",
+          "postalCode": "76039",
+          "addressCountry": "USA"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "telephone": "[+1(111) 111-1111]",
+          "email": "support@yourdigilab.com"
+        },
+        "sameAs": [
+          "https://www.facebook.com/yourDigiLabOfficial/",
+          "https://www.instagram.com/yourdigilabofficial/"
+        ]
+      }
+    </script>
+
+    <noscript>
+      <style type="text/css">
+        .css-typing {
+          visibility: visible;
+        }
+        .reveallr,
+        .revealrl,
+        .revealfadein,
+        .revealtb,
+        .revealbt,
+        .bounceInDown {
+          opacity: 1;
+          transform: unset;
+          -webkit-transition: unset;
+        }
+      </style>
+    </noscript>
+
+    <!--[if IE
+      ]><meta http-equiv="X-UA-Compatible" content="IE=edge"
+    /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="YourDigiLab" />
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="../manifest.json" />
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="YDL" />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="../favicon/apple-icon-512x512.png@v=2"
+    />
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="YDL" />
+    <link rel="apple-touch-icon" href="../favicon/apple-icon-512x512.png@v=2" />
+    <link rel="icon" href="../favicon/favicon.ico@v=2" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../favicon/apple-icon-57x57.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../favicon/apple-icon-60x60.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../favicon/apple-icon-72x72.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../favicon/apple-icon-76x76.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../favicon/apple-icon-114x114.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../favicon/apple-icon-120x120.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../favicon/apple-icon-144x144.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-icon-152x152.png@v=2"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon/apple-icon-180x180.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../favicon/android-icon-192x192.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../favicon/favicon-96x96.png@v=2"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png@v=2"
+    />
+    <link
+      href="../favicon/logo-640x1136.png@v=2"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-750x1334.png@v=2"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1242x2208.png@v=2"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1125x2436.png@v=2"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-828x1792.png@v=2"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1242x2688.png@v=2"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1536x2048.png@v=2"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1668x2224.png@v=2"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-1668x2388.png@v=2"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="../favicon/logo-2048x2732.png@v=2"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/favicon/apple-icon-512x512.png?v=2"
+    />
+
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("https://yourdigilab.com/serviceworker.js", { scope: "." })
+          .then(
+            function (registration) {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope,
+              );
+            },
+            function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            },
+          );
+      }
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/plugins/lightbox2/css/lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/p/226.css@v=2303852843.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/TopBanner.css@id=89382d4028885ac68e13.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/blogs.css@id=7f808ba0e7d825a2148b.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="../build/blogDetail.css@id=2a98e7cfdb5a10ad4da2.css"
+      type="text/css"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Angular 12 Vs Angular 13: What&#039;s the Difference and Features?",
+        "alternativeHeadline": "Angular 12 Vs Angular 13: What&#039;s the Difference and Features?",
+        "image": "https://yourdigilab.com/images/shares/upload/2022-06/image-1654861383.jpg",
+        "author": {
+          "@type": "Person",
+          "name": "John Fernandes",
+          "url": "https://yourdigilab.com/blog/author/john-fernandes"
+        },
+        "genre": "search engine optimization",
+        "keywords": "",
+        "publisher": {
+          "@type": "Organization",
+          "name": "John Fernandes",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://yourdigilab.com/images/shares/Blogimages/john.jpg"
+          }
+        },
+        "url": "https://yourdigilab.com/blog/angular-12-vs-angular-13",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://yourdigilab.com/blog/angular-12-vs-angular-13"
+        },
+        "datePublished": "2022-06-10",
+        "dateCreated": "2022-06-10",
+        "dateModified": "2025-04-08",
+        "description": "Do you know the difference between angular 12 and angular 13? Read here to find out their basic features at yourdigilab blog and pick the better one for your projects!"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://yourdigilab.com",
+              "name": "YourDigiLab",
+              "image": "https://yourdigilab.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://yourdigilab.com/blog",
+              "name": "Blog | YourDigiLab",
+              "image": "https://yourdigilab.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://yourdigilab.com/blog/website-design",
+              "name": "Website Design",
+              "image": "https://yourdigilab.com/dark-logo.png"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://yourdigilab.com/blog/angular-12-vs-angular-13",
+              "name": "Angular 12 Vs Angular 13: What&#039;s the Difference and Features?",
+              "image": "https://yourdigilab.com/images/shares/upload/2022-06/image-1654861383.jpg"
+            }
+          }
+        ]
+      }
+    </script>
+    <style>
+      /* Add this CSS for better TOC scrolling behavior */
+
+      .accordion-body {
+        max-height: 60vh;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        padding-right: 10px;
+      }
+
+      .sidebar-subscribe-box {
+        background: #fff6f1;
+        border-radius: 16px;
+        padding: 28px 20px 24px 20px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        font-family: inherit;
+      }
+
+      .subscribe-form-ui {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .subscribe-heading {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        line-height: 1.2;
+        color: #222;
+      }
+
+      .subscribe-subheading {
+        font-size: 14px;
+        color: #444;
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+
+      .subscribe-input,
+      .subscribe-input-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+
+      .subscribe-input {
+        background: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 13px 14px;
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+        color: #222;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        outline: none;
+        width: 100%;
+        transition: box-shadow 0.2s;
+      }
+
+      .subscribe-input:focus {
+        box-shadow: 0 0 0 2px #ff6600;
+      }
+
+      .subscribe-input-group {
+        gap: 8px;
+      }
+
+      .subscribe-country-code {
+        border: none;
+        border-radius: 8px;
+        background: #fff;
+        padding: 13px 10px 13px 10px;
+        font-size: 16px;
+        color: #222;
+        min-width: 80px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        outline: none;
+        appearance: none;
+      }
+
+      .subscribe-mobile {
+        flex: 1;
+      }
+
+      .subscribe-textarea {
+        resize: vertical;
+        min-height: 48px;
+        max-height: 120px;
+      }
+
+      .subscribe-btn {
+        background: #ff6b47;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 0;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 6px;
+        cursor: pointer;
+        width: 100%;
+        transition: background 0.2s;
+      }
+
+      .subscribe-btn:hover {
+        background: rgb(255, 82, 38);
+      }
+    </style>
+  </head>
+  <body class="hrd-sec blog pg-226" style="overflow: hidden">
+    <header class="navigation darkHeader">
+      <div class="container">
+        <div class="top-bar">
+          <div class="tb-cont">
+            <div class="col-lg-2 col-6 dkLogo">
+              <a href="../index.html" aria-label="logo">
+                <img
+                  src="../assets/images/logo.png"
+                  alt="logo"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <div class="col-lg-10 col-12 successReview">
+              <div class="dkMenu">
+                <nav class="navbar navbar-expand-lg p-0 col-12 nav-desk">
+                  <!-- Container wrapper -->
+                  <div class="main-nav">
+                    <!-- Toggle button -->
+                    <button
+                      class="navbar-toggler px-0"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#navbarExampleOnHover"
+                      aria-controls="navbarExampleOnHover"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div
+                      class="collapse navbar-collapse"
+                      id="navbarExampleOnHover"
+                    >
+                      <!-- Left links -->
+                      <ul class="navbar-nav w-75p">
+                        <!-- Navbar dropdown -->
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-1"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Services
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0"
+                            aria-labelledby="navbarDropdown-1"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="angular-12-vs-angular-13.html#"
+                                        aria-label="service-icon"
+                                      >
+                                        Web Development
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../ecommerce-website-development.html"
+                                          >Ecommerce</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../cms-development-company.html"
+                                          >CMS</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../web-app-development.html"
+                                          >Web Application</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../digital-marketing-service.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Digital Marketing
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="../seo-company.html">SEO</a>
+                                      </li>
+                                      <li>
+                                        <a href="../ppc-agency.html">PPC</a>
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../social-media-marketing-services.html"
+                                          >SMM</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../software-development-services.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Software Development
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >SAP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >ERP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >POS</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >CRM</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../logo-design-services.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Logo Design
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../illustrated-logo-design.html"
+                                          >Illustrated Logo</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../symbolic-logo-designs.html"
+                                          >Symbolic Logo Design</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../typography-logo.html"
+                                          >Typography Logo</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../iconic-logos.html"
+                                          >Ionic Logos</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col m-row">
+                                  <div class="m-tilte">
+                                    <span
+                                      ><a
+                                        href="../index.html"
+                                        aria-label="service-icon"
+                                      >
+                                        Video Animation
+                                      </a></span
+                                    >
+                                  </div>
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="../2d-animation-services.html"
+                                          >2d Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../3d-animation-services.html"
+                                          >3d Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../index.html"
+                                          >Product Animation</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../index.html"
+                                          >Whiteboard Animation</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Industries
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0 int-w10"
+                            aria-labelledby="navbarDropdown-2"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >Fintech</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >Healthcare</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >Real Estate</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="angular-12-vs-angular-13.html#"
+                                          >Logistics</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../index.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Technologies
+                          </a>
+                          <!-- Dropdown menu -->
+                          <div
+                            class="dropdown-menu w-100 mt-0 int-w20"
+                            aria-labelledby="navbarDropdown-2"
+                            style="
+                              border-top-left-radius: 0;
+                              border-top-right-radius: 0;
+                            "
+                            data-popper-placement="null"
+                            data-mdb-popper="none"
+                          >
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="col m-row">
+                                  <div class="m-items">
+                                    <ul>
+                                      <li>
+                                        <a
+                                          href="../react-js-web-development-company.html"
+                                          >React</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../laravel-web-development.html"
+                                          >Laravel</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../php-web-development.html"
+                                          >PHP</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../node-js-development-company.html"
+                                          >NodeJs</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a
+                                          href="../wordpress-development-services.html"
+                                          >Wordpress</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a href="../java-web-development.html"
+                                          >Java</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="angular-12-vs-angular-13.html#porfolio-grids"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Our Work
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../contact-us.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Contact
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../about-us.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            About Us
+                          </a>
+                        </li>
+                        <li
+                          class="nav-item dropdown dropdown-hover position-static"
+                        >
+                          <a
+                            class="nav-link"
+                            href="../blog.1.html"
+                            id="navbarDropdown-2"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Blogs
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="btnDark">
+                        <a
+                          href="../free-quote.html"
+                          rel="index follow"
+                          class="d-btn2"
+                          target="_self"
+                          >Get Free Quote
+                          <div>
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              class="rocket-img"
+                              src="../assets/images/rocket.png"
+                              data-loaded="true"
+                              alt="Rocket"
+                            />
+                            <span class="circle1"></span>
+                            <span class="circle2"></span>
+                            <span class="circle3"></span>
+                            <span class="circle4"></span>
+                            <span class="circle5"></span>
+                            <span class="circle6"></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- Collapsible wrapper -->
+                  </div>
+                  <!-- Container wrapper -->
+                </nav>
+                <nav class="navbar navbar-expand-lg navbar-light nav-mb">
+                  <div class="logo d-lg-none">
+                    <a href="../index.html" aria-label="logo">
+                      <img
+                        src="../assets/images/logo.png"
+                        alt="logo"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="mobile-nav d-lg-none mm-menu">
+                    <div id="myNav" class="overlay">
+                      <p class="closebtn" onclick="closeNav()">
+                        <i class="fa fa-close"></i>
+                      </p>
+                      <div class="overlay-content">
+                        <div class="">
+                          <div class="accordion" id="myAccordion">
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingOne">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseNav"
+                                >
+                                  Service
+                                </button>
+                              </span>
+                              <div
+                                id="collapseNav"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="angular-12-vs-angular-13.html#"
+                                            aria-label="service-icon"
+                                          >
+                                            Web Development
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../ecommerce-website-development.html"
+                                              >Ecommerce</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../cms-development-company.html"
+                                              >CMS</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../web-app-development.html"
+                                              >Web Application</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../digital-marketing-service.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Digital Marketing
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a href="../seo-company.html"
+                                              >SEO</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../ppc-agency.html">PPC</a>
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../social-media-marketing-services.html"
+                                              >SMM</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../software-development-services.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Software Development
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >SAP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >ERP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >POS</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >CRM</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../logo-design-services.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Logo Design
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../illustrated-logo-design.html"
+                                              >Illustrated Logo</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../symbolic-logo-designs.html"
+                                              >Symbolic Logo Design</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../typography-logo.html"
+                                              >Typography Logo</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../iconic-logos.html"
+                                              >Ionic Logos</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="col-12 m-row">
+                                      <div class="m-tilte">
+                                        <span
+                                          ><a
+                                            href="../index.html"
+                                            aria-label="service-icon"
+                                          >
+                                            Video Animation
+                                          </a></span
+                                        >
+                                      </div>
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="../2d-animation-services.html"
+                                              >2d Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../3d-animation-services.html"
+                                              >3d Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../index.html"
+                                              >Product Animation</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a href="../index.html"
+                                              >Whiteboard Animation</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingTwo">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseTwo"
+                                >
+                                  Industries
+                                </button>
+                              </span>
+                              <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >Fintech</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >Healthcare</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../shopify-development-services.html"
+                                              >Real Estate</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../react-native-app-development.html"
+                                              >Logistics</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <span class="accordion-header" id="headingThree">
+                                <button
+                                  type="button"
+                                  class="accordion-button collapsed"
+                                  data-bs-toggle="collapse"
+                                  data-bs-target="#collapseThree"
+                                >
+                                  Technologies
+                                </button>
+                              </span>
+                              <div
+                                id="collapseThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#myAccordion"
+                              >
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-12 m-row">
+                                      <div class="m-items">
+                                        <ul>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >React</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../laravel-web-development.html"
+                                              >Laravel</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../php-web-development.html"
+                                              >PHP</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="angular-12-vs-angular-13.html#"
+                                              >NodeJs</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../wordpress-development-services.html"
+                                              >Wordpress</a
+                                            >
+                                          </li>
+                                          <li>
+                                            <a
+                                              href="../java-web-development.html"
+                                              >Java</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mb-single-item">
+                              <a
+                                href="angular-12-vs-angular-13.html#portfolio-grids"
+                                >Our Work</a
+                              >
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../contact-us.html">Contact</a>
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../about-us.html">About Us</a>
+                            </div>
+                            <div class="mb-single-item">
+                              <a href="../blog.1.html">Blogs</a>
+                            </div>
+                            <div class="btnDark">
+                              <a
+                                href="../free-quote.html"
+                                rel="index follow"
+                                class="d-btn2"
+                                target="_self"
+                                >Get Free Quote
+                                <div>
+                                  <img
+                                    loading="lazy"
+                                    decoding="async"
+                                    class="rocket-img"
+                                    src="../assets/images/rocket.png"
+                                    data-loaded="true"
+                                    alt="Rocket"
+                                  />
+                                  <span class="circle1"></span>
+                                  <span class="circle2"></span>
+                                  <span class="circle3"></span>
+                                  <span class="circle4"></span>
+                                  <span class="circle5"></span>
+                                  <span class="circle6"></span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mbnavicon">
+                      <i
+                        class="fa fa-align-right"
+                        onclick="openNav()"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+      // Get the header element
+      const header = document.querySelector(".navigation");
+
+      // Function to change header background on scroll
+      function changeHeaderBackground() {
+        if (window.scrollY > 0) {
+          header.style.backgroundColor = "#09002b"; // Change to dark blue
+        } else {
+          header.style.backgroundColor = ""; // Reset to original
+        }
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", changeHeaderBackground);
+    </script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.classList.contains("show")) {
+            // Closing: set max-height to 0
+            panel.style.maxHeight = "0";
+            panel.classList.remove("show");
+          } else {
+            // Opening: set max-height to scrollHeight
+            panel.classList.add("show");
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <div class="progress"></div>
+    <section class="blog-detail">
+      <section class="bg-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 blgdtctn">
+              <div class="blog-header">
+                <div class="breadcrumb mb-4">
+                  <ul class="">
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="../blog.1.html">Blog</a></li>
+
+                    <li>
+                      Angular 12 Vs Angular 13: What&#039;s the Difference and
+                      Features?
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="cnt-h mb-5">
+                  <h1 class="hdg-xl-d">
+                    Angular 12 Vs Angular 13: What&#039;s the Difference and
+                    Features?
+                  </h1>
+                </div>
+                <div class="cnt-cat mb-5">
+                  <div class="cnt-anchor">
+                    <a href="https://yourdigilab.com/blog/website-design"
+                      >Website Design</a
+                    >
+                  </div>
+                  <div class="post-author">
+                    <p>
+                      By
+                      <a href="author/john-fernandes.html" class="catBtn"
+                        >John Fernandes</a
+                      >
+                      &nbsp;&nbsp; on Jun 10, 2022
+                    </p>
+                    <span>~ 2 minutes to read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-content-sec">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="sidebar" style="position: sticky; top: 120px">
+                <div class="sidebar-tab accordion">
+                  <div class="accordion-item">
+                    <button
+                      class="hd-head accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne1"
+                      aria-expanded="true"
+                      aria-controls="collapseOne1"
+                    >
+                      Table Of Content
+                    </button>
+                    <div
+                      id="collapseOne1"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <ul class="accordion-body"></ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Share Icons Section -->
+                <div class="share-section mt-4">
+                  <ul class="share-icons">
+                    <li>
+                      <a
+                        href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyourdigilab.com%2Fblog%2Fangular-12-vs-angular-13&text=Angular+12+Vs+Angular+13%3A+What%27s+the+Difference+and+Features%3F"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on Twitter"
+                      >
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourdigilab.com%2Fblog%2Fangular-12-vs-angular-13"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on Facebook"
+                      >
+                        <i class="fa fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyourdigilab.com%2Fblog%2Fangular-12-vs-angular-13"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://api.whatsapp.com/send?text=Angular+12+Vs+Angular+13%3A+What%27s+the+Difference+and+Features%3F+https%3A%2F%2Fyourdigilab.com%2Fblog%2Fangular-12-vs-angular-13"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Share on WhatsApp"
+                      >
+                        <i class="fa fa-whatsapp"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:?subject=Angular+12+Vs+Angular+13%3A+What%27s+the+Difference+and+Features%3F&body=Check+out+this+article%3A+https%3A%2F%2Fyourdigilab.com%2Fblog%2Fangular-12-vs-angular-13"
+                        aria-label="Share via Email"
+                      >
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 blgdtctn">
+              <!-- Dynamic Content Section -->
+              <div class="cnt-img mb-3">
+                <img
+                  id="frd-img"
+                  src="https://yourdigilab.com/images/shares/upload/2022-06/image-1654861383.jpg"
+                />
+              </div>
+              <div class="post_body">
+                <section
+                  class="content-widget site-content w26"
+                  style="background: url()"
+                >
+                  <div class="container">
+                    <p>
+                      Are you in search of a reliable mobile app development
+                      framework? Since the launch of Angular in 2009 by Google,
+                      most developers run short of choices. It is because this
+                      web and mobile application builder is ideal in every
+                      manner. With its rising popularity comes a set of versions
+                      that follow. Its latest version, the Angular v13 is the
+                      new name in the market.
+                    </p>
+
+                    <p>
+                      At this point, developers are debating the latest and the
+                      previous versions of angular. It means the competition
+                      between Angular 12 vs Angular 13 has supporters on either
+                      side. This article shares a detailed comparison between
+                      both versions. Keep reading to know the differences and
+                      features of each version.
+                    </p>
+
+                    <p>
+                      Let us start by understanding what each version means.
+                    </p>
+
+                    <h2 id="hd-h2pmk">What Is Angular 12?</h2>
+
+                    <p>
+                      <a
+                        href="https://blog.angular.io/angular-v12-is-now-available-32ed51fbfd49"
+                        rel="nofollow"
+                        target="_blank"
+                        >Angular 12</a
+                      >, as the name implies, is the 12th version of the angular
+                      web framework. It was developed by Google in May 2021. Its
+                      ability to develop front-end solutions made it popular
+                      soon after its release. Some of its key features include,
+                    </p>
+
+                    <h3 id="hd-zau61">Typescript 4.2</h3>
+
+                    <p>
+                      Typescript 4.2 is one of the best features of this
+                      version. Developers are fond of it as it has enhanced the
+                      programming process. &nbsp;It lets a developer Boost the
+                      readability of any program created.
+                    </p>
+
+                    <h3 id="hd-oib5i">Ivy Compilation</h3>
+
+                    <p>
+                      One of the most important features of angular 12 revolves
+                      around the mechanism Ivy elsewhere. Its primary purpose is
+                      to merge the angular ecosystem into a single one. As a
+                      result, any program becomes more accessible and swift.
+                    </p>
+
+                    <h3 id="hd-d7uhc">Webpack 5.37 Support</h3>
+
+                    <p>
+                      The webpack 5.37 support makes angular 12 accessible and
+                      compatible. It gives attention to the bundle size and
+                      building execution in programming. Therefore, developers
+                      find it easy to improve long-term caching and execution.
+                    </p>
+
+                    <h3 id="hd-ls4ox">Style Improvements</h3>
+
+                    <p>
+                      Angular 12 supports the new inline Sass that belongs to
+                      the component detector&rsquo;s style field. &nbsp;It means
+                      the integration of angular material and angular CDK in the
+                      Sass module. Therefore, an app easily switches from the
+                      node&ndash;Sass package to the Sass-npm package.
+                    </p>
+
+                    <h3 id="hd-mr6l7">
+                      Little Compatibility with Internet Explorer 11
+                    </h3>
+
+                    <p>
+                      Many people were annoyed by the linkage between Internet
+                      Explorer 11 and angular 12. However, the IE11 was a
+                      liability to this framework. Henceforth, its use was
+                      reduced to a minimum for easy processing.
+                    </p>
+
+                    <h2 id="hd-562dz">What Is Angular 13?</h2>
+
+                    <p>
+                      <a
+                        href="https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296"
+                        rel="nofollow"
+                        target="_blank"
+                        >Angular 13</a
+                      >
+                      is the 13th version of the angular web framework. It was
+                      developed by Google in November 2021. Some of the stunning
+                      features of this version differentiate it from angular 12.
+                    </p>
+
+                    <h3 id="hd-yezhj">No Internet Explorer 11</h3>
+
+                    <p>
+                      As mentioned above, angular 12 showed a few signs of
+                      reduction of Internet Explorer 11. &nbsp;However, this new
+                      version has completely eliminated IE11. Also, Angular has
+                      now replaced it with native web APIs. &nbsp;These help to
+                      utilize different features of the latest web browsers like
+                      CSS variables, plugins, animations, and much more.
+                    </p>
+
+                    <h3 id="hd-lza3o">Complete Ivy</h3>
+
+                    <p>
+                      Angular 13 is completely based on Ivy Everywhere. &nbsp;It
+                      has completely executed the use of the view engine from
+                      the framework. &nbsp;Also, the presence of Ivy Mechanism
+                      is a stunning way to boost platform speed and efficiency.
+                    </p>
+
+                    <h3 id="hd-8rv2e">Modern Component API</h3>
+
+                    <p>
+                      Before the launch of angular 13, Developers had to work at
+                      a tough time with the creation of components. They used
+                      the boilerplate code that consumed more time.
+                      &nbsp;Interestingly, this new version consists of
+                      <a
+                        href="https://angular.io/api/core/ViewContainerRef"
+                        rel="nofollow"
+                        target="_blank"
+                        >View ContainerRef</a
+                      >. create Component. It helps in the quick development of
+                      components with little effort.
+                    </p>
+
+                    <h3 id="hd-vkruq">Enhanced Component Ally</h3>
+
+                    <p>
+                      When an application is created for a large user base,
+                      accessibility (ally) is the main point of concern.
+                      Fortunately, in angular 13, developers can pre-test the
+                      standards of accessibility and relatable components. These
+                      include touch targets, radio buttons, checkboxes, and
+                      more.
+                    </p>
+
+                    <h3 id="hd-hzjxh">Improved Debugging and Testing</h3>
+
+                    <p>
+                      Angular 13 has worked on the betterment of testing and
+                      debugging in the framework. &nbsp;It offers two different
+                      methods for testing. Each of these programs provides
+                      developers with the latest modules for the compilation and
+                      testing of codes.
+                    </p>
+
+                    <h2 id="hd-b2xms">
+                      Angular 12 versus Angular 13 &ndash; Which Is a Better
+                      Framework?
+                    </h2>
+
+                    <p>
+                      Both the angular frameworks are efficient enough to
+                      develop high-quality web applications. &nbsp;However, as
+                      angular 13 is a modern and better framework than V12, it
+                      proves to be more beneficial. &nbsp;Developers find it
+                      more helpful and time-saving in terms of programming and
+                      integration.
+                    </p>
+
+                    <p>
+                      Therefore, if you&rsquo;re looking for the right angular
+                      framework, give attention to angular 13!
+                    </p>
+                    <div
+                      class="post_link text-center"
+                      style="margin-bottom: 35px"
+                    >
+                      <a
+                        href="tips-to-make-a-user-friendly-web-design.html"
+                        class="btn btn-color no-popup"
+                        title="Tips To Make A User-Friendly Web Design"
+                      >
+                        <i class="fa fa-chevron-left"></i>&nbsp;&nbsp;Previous
+                      </a>
+                      <a
+                        href="what-is-react.html"
+                        class="btn btn-color no-popup"
+                        title="What is React and Why do we use it?"
+                      >
+                        Next &nbsp;&nbsp;<i class="fa fa-chevron-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="author-box" id="author-items">
+                  <div class="authorDetail">
+                    <div class="author-info">
+                      <div class="authorName">
+                        <a class="author-h" href="author/john-fernandes.html">
+                          John Fernandes
+                        </a>
+                      </div>
+                    </div>
+                    <div class="author-bio">
+                      <p>
+                        John Fernandes&nbsp;is content writer&nbsp;at
+                        YourDigiLab, An expert in producing engaging and
+                        informative research-based articles and blog posts. His
+                        passion to disseminate fruitful information fuels
+                        his&nbsp;passion for writing.
+                      </p>
+                    </div>
+                    <div class="authorName">
+                      <ul></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="sidebar" style="position: sticky; top: 120px">
+                <!-- <div class="ctaForm mt-4">
+                                    <div class="ctaCtn">
+                                        <p class="hdg-xl-d">How is your <br> website's SEO?</p>
+                                        <p class="ctnSubH"> Use our free tool to get your score calculated in under 60 seconds
+                                        </p>
+                                    </div>
+                                    <div class="ctaFeilds mt-3">
+                                        <form action="/contact-us" class="noajax">
+                                            <input type="text" class="form-control urlField" name="website"
+                                                placeholder="https://www.your-url.com" required>
+                                            <button type="submit" class="d-btn3 mt-3">Get Your SEO Score</button>
+                                        </form>
+                                    </div>
+                                </div> -->
+                <div class="sidebar-subscribe-box">
+                  <div class="subscribe-heading">
+                    Subscribe to Unlock<br />Exclusive Business Insights!
+                  </div>
+                  <div class="subscribe-subheading">
+                    Our kind, happy and humble customer support team would love
+                    to answer your questions. Send us an email or call to speak
+                    with an actual human.
+                  </div>
+                  <form
+                    class="subscribe-form-ui"
+                    action="https://support@yourdigilab.com/submit/blog"
+                    method="post"
+                  >
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="0HHawM0l7qK3gNupoRARuMDryP8XD01Lb9jqDXY1"
+                    />
+                    <input type="hidden" name="form" value="NMY^%%t#bLSCVQ" />
+
+                    <div class="col-md-12">
+                      <input
+                        type="text"
+                        name="name"
+                        value=""
+                        class="form-control font-sm"
+                        placeholder="Name"
+                        data-validation="required|length|alphanumeric"
+                        data-validation-allowing=" "
+                        data-validation-length="min4 max64"
+                      />
+                    </div>
+                    <div class="col-md-12">
+                      <input
+                        type="email"
+                        name="email"
+                        value=""
+                        class="form-control font-sm"
+                        placeholder="Email"
+                        data-validation="required|email"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="tel"
+                        name="typed-phone"
+                        value=""
+                        class="form-control font-sm inp-phone"
+                        placeholder="Phone"
+                        data-validation="required"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control font-sm"
+                        name="message"
+                        rows="3"
+                        placeholder="Message"
+                        data-validation="required"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 mt-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="terms"
+                          id="terms-"
+                          data-validation="required"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="terms-"
+                          style="font-size: 14px; color: #333"
+                        >
+                          By submitting this form, I agree to receive
+                          non-automated SMS updates, payment info, and
+                          service-related messages from YourDigiLab. Consent
+                          isn't required for purchase. Msg & data rates may
+                          apply. Reply HELP for help or STOP to opt out.
+                          <a target="_blank" href="../terms-and-conditions.html"
+                            >Terms & Conditions</a
+                          >
+                          &
+                          <a target="_blank" href="../privacy-policy.html"
+                            >Privacy Policy</a
+                          >
+                        </label>
+                      </div>
+                    </div>
+
+                    <button type="submit" class="subscribe-btn">
+                      Schedule a Free Consultation!
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="related-sec">
+      <div class="container">
+        <h2 class="section-title">Related articles</h2>
+
+        <div class="slider-container">
+          <button class="nav-button prev" id="prevBtn">
+            <span class="nav-arrow">‹</span>
+          </button>
+
+          <div class="slider-wrapper" id="sliderWrapper">
+            <div class="article-card">
+              <a
+                href="website-design-mistakes-that-kill-conversions.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-07/image-1753772034.jpg"
+                  alt="7 Website Design Mistakes That Kill Conversions"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="website-design.html" class="methodology-tag">
+                    Website Design
+                  </a>
+                  <a
+                    href="website-design-mistakes-that-kill-conversions.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      7 Website Design Mistakes That Kill Conversions
+                    </h3>
+                    <p class="card-description">
+                      Avoid costly website UX pitfalls. Discover 7 critical web
+                      design mistakes that kill conversions and expert tips to
+                      build...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/robert-kevin.html" class="author-name">
+                        Robert Kevin
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">29 Jul 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a
+                href="how-to-choose-the-best-web-design-agency-for-your-business.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-04/image-1744113692.jpg"
+                  alt="How to Choose the Best Web Design Agency for Your Business"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="website-design.html" class="methodology-tag">
+                    Website Design
+                  </a>
+                  <a
+                    href="how-to-choose-the-best-web-design-agency-for-your-business.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      How to Choose the Best Web Design Agency for Your Business
+                    </h3>
+                    <p class="card-description">
+                      Struggling to find the best web design agency? Learn how
+                      to assess portfolios, pricing, and expertise to get a
+                      website t...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/robert-kevin.html" class="author-name">
+                        Robert Kevin
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">08 Apr 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="web-design-trends.html" class="card-link">
+                <img
+                  src="../images/shares/Blogimages/web_design_trends.png"
+                  alt="Web Design Trends 2025: What Businesses Need to Know"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="website-design.html" class="methodology-tag">
+                    Website Design
+                  </a>
+                  <a href="web-design-trends.html" class="card-link">
+                    <h3 class="card-title">
+                      Web Design Trends 2025: What Businesses Need to Know
+                    </h3>
+                    <p class="card-description">
+                      Don’t let an outdated website cost you customers. Learn
+                      the latest web design trends for 2025 and build a site
+                      that co...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/john-fernandes.html" class="author-name">
+                        John Fernandes
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">08 Apr 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a
+                href="why-does-custom-web-design-outperform-templates-for-growth.html"
+                class="card-link"
+              >
+                <img
+                  src="../images/shares/upload/2025-03/image-1741674931.jpg"
+                  alt="Why Does Custom Web Design Outperform Templates for Growth?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="website-design.html" class="methodology-tag">
+                    Website Design
+                  </a>
+                  <a
+                    href="why-does-custom-web-design-outperform-templates-for-growth.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      Why Does Custom Web Design Outperform Templates for
+                      Growth?
+                    </h3>
+                    <p class="card-description">
+                      Looking for real growth? Custom web design beats templates
+                      with tailored features, better SEO, and a unique brand
+                      identi...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/robert-kevin.html" class="author-name">
+                        Robert Kevin
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">11 Mar 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="shopify-monthly-vs-yearly-plan.html" class="card-link">
+                <img
+                  src="../images/shares/upload/2022-12/image-1672138152.jpg"
+                  alt="How Much Is Shopify Monthly Vs Yearly Plan?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="website-design.html" class="methodology-tag">
+                    Website Design
+                  </a>
+                  <a
+                    href="shopify-monthly-vs-yearly-plan.html"
+                    class="card-link"
+                  >
+                    <h3 class="card-title">
+                      How Much Is Shopify Monthly Vs Yearly Plan?
+                    </h3>
+                    <p class="card-description">
+                      In this article, we have discussed the Shopify monthly vs
+                      yearly plan and which one is more beneficial?
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/contributor.html" class="author-name">
+                        Contributor
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">27 Dec 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="article-card">
+              <a href="what-is-react.html" class="card-link">
+                <img
+                  src="../images/shares/upload/2022-11/image-1668427349.jpg"
+                  alt="What is React and Why do we use it?"
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <a href="web-development.html" class="methodology-tag">
+                    Web Development
+                  </a>
+                  <a href="what-is-react.html" class="card-link">
+                    <h3 class="card-title">
+                      What is React and Why do we use it?
+                    </h3>
+                    <p class="card-description">
+                      React is a JavaScript library for building user
+                      interfaces. It was developed by Facebook in 2011 and was
+                      open-sourced in...
+                    </p>
+                  </a>
+                  <div class="card-footer">
+                    <div class="author-info">
+                      <i class="fa fa-pencil"></i>
+                      <a href="author/ramsha-irfan.html" class="author-name">
+                        Ramsha Irfan
+                      </a>
+                    </div>
+                    <div class="date-info">
+                      <i class="fa fa-calendar"></i>
+                      <span class="date-text">14 Nov 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <button class="nav-button next" id="nextBtn">
+            <span class="nav-arrow">›</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- Top CTA Section -->
+      <div class="footer-top">
+        <div class="container">
+          <p class="footer-head">
+            Take the first step towards the right direction
+          </p>
+          <div class="cta-container">
+            <!-- Phone CTA -->
+            <div class="cta-item">
+              <a href="tel:+6822358107" class="chat-style">
+                <div class="cta-icon">
+                  <img
+                    src="../assets/images/new-images/call-icon.png"
+                    alt="call-icon"
+                  />
+                </div>
+                <div class="cta-content">
+                  <div class="cta-title">+1(111) 111-1111</div>
+                  <div class="cta-subtitle">Call us anytime</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Portfolio Button -->
+            <div class="cta-item cta-button">
+              <a href="../free-quote.html" class="btn-cta">
+                Send me a Proposal
+                <i class="fa fa-long-arrow-right"></i>
+              </a>
+            </div>
+
+            <!-- Chat CTA -->
+            <div class="cta-item">
+              <a href="javascript:void(Tawk_API.toggle())" class="chat-style">
+                <div class="cta-icon">
+                  <img
+                    src="../assets/images/new-images/chat.png"
+                    alt="chat-icon"
+                  />
+                </div>
+                <div class="cta-content">
+                  <div class="cta-title">Chat Live</div>
+                  <div class="cta-subtitle">to discuss your project</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Grid Section -->
+      <div class="services-grid">
+        <div class="container">
+          <div class="service-column">
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="../about-us.html">About US</a></li>
+              <li><a href="../contact-us.html">Contact US</a></li>
+              <li><a href="../blog.1.html">Blog</a></li>
+              <li><a href="../terms-conditions.html">Terms & Conditions</a></li>
+              <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="../sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Services</h2>
+            <ul>
+              <li><a href="../logo-design-services.html">Logo Design</a></li>
+              <li><a href="../index.html">Web Design & Development</a></li>
+              <li>
+                <a href="../ecommerce-website-development.html">Ecommerce</a>
+              </li>
+              <li>
+                <a href="../digital-marketing-service.html"
+                  >Digital Marketing</a
+                >
+              </li>
+              <li>
+                <a href="../software-development-services.html"
+                  >Software Development</a
+                >
+              </li>
+              <li>
+                <a href="../video-animation-services.html">Video & Animation</a>
+              </li>
+              <li>
+                <a href="../corporate-branding-services.html"
+                  >Corporate Branding</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Technologies</h2>
+            <ul>
+              <li>
+                <a href="../react-js-web-development-company.html">React</a>
+              </li>
+              <li><a href="../laravel-web-development.html">Laravel</a></li>
+              <li><a href="../php-web-development.html">PHP</a></li>
+              <li>
+                <a href="../wordpress-development-services.html">Wordpress</a>
+              </li>
+              <li><a href="../node-js-development-company.html">NodeJS</a></li>
+              <li><a href="../java-web-development.html">Java</a></li>
+              <li><a href="angular-12-vs-angular-13.html#">Python</a></li>
+            </ul>
+          </div>
+          <div class="service-column">
+            <h2>Industries</h2>
+            <ul>
+              <li><a href="angular-12-vs-angular-13.html#">Real Estate</a></li>
+              <li><a href="angular-12-vs-angular-13.html#">Healthcare</a></li>
+              <li><a href="angular-12-vs-angular-13.html#">Fintech</a></li>
+              <li><a href="angular-12-vs-angular-13.html#">Logistics</a></li>
+            </ul>
+            <div class="s-icon">
+              <!-- Facebook -->
+              <a
+                
+                target="_blank"
+                rel="noopener"
+                aria-label="YourDigiLab Facebook"
+              >
+                <i class="fa fa-facebook-f"></i>
+              </a>
+              <!-- Instagram -->
+              <a
+                
+                target="_blank"
+                rel="noopener"
+                aria-label="YourDigiLab Instagram"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <!-- Pinterest -->
+              <a
+                
+                target="_blank"
+                rel="noopener"
+                aria-label="YourDigiLab Pinterest"
+              >
+                <i class="fa fa-pinterest"></i>
+              </a>
+              <a
+                
+                target="_blank"
+                rel="noopener"
+                aria-label="YourDigiLab twitter"
+              >
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a
+                
+                target="_blank"
+                rel="noopener"
+                aria-label="YourDigiLab linkedin"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="footer-copyright mt-4">
+              All Rights Reserved! © 2025
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Locations Section -->
+      <!-- <div class="locations">
+        <div class="container-fluid">
+          <div class="location-card">
+            <h3><a href="../los-angeles-web-design.html">Los Angeles</a></h3>
+            <p>777 S Alameda St, Los Angeles, CA 90021</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../houston-web-design.html">Houston</a></h3>
+            <p>3730 Kirby Dr, Houston, TX 77098</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../new-york-web-design.html">New York</a></h3>
+            <p>250 Park Ave, New York, NY 10177</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../san-diego-web-design.html">San Diego</a></h3>
+            <p>3111 Camino Del Rio North Suite 400, San Diego CA 92108</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../new-jersey-web-design.html">New Jersey</a></h3>
+            <p>1040 Kings Hwy N, Cherry Hill Township, NJ 08034</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../chicago-web-design.html">Chicago</a></h3>
+            <p>203 N LaSalle St, Chicago, IL 60601</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="../ohio-web-design.html">Ohio</a></h3>
+            <p>9341 Ellis Way, Strongsville, OH 44136</p>
+          </div>
+          <div class="location-card">
+            <h3><a href="angular-12-vs-angular-13.html#">Euless</a></h3>
+            <p>300 East Ash Lane Euless, TX 76039</p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Footer Border -->
+      <div class="footer-border"></div>
+    </footer>
+    <script src="../assets/plugins/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="../assets/plugins/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/5fe1bbf1df060f156a8f4148/1eq4scam8";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="../build/js/main.js@id=77a73856ccfe6c3d5847"></script>
+    <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <script src="../assets/plugins/jquery-marquee/jquery.marquee.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdY8REsAAAAAHgYMrCiz5d1oqQuVvWrSBCCHSXH"></script>
+
+    <!--<script>
+    /*var phone_number = window.intlTelInput(document.querySelector("#phone"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+    var phone_number = window.intlTelInput(document.querySelector("#discount"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+    var phone_number = window.intlTelInput(document.querySelector("#popup"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });
+
+    var phone_number = window.intlTelInput(document.querySelector("#phone"), {
+        separateDialCode: true,
+        preferredCountries:["us"],
+        hiddenInput: "full",
+        utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+    });
+
+    $("#banform").submit(function() {
+        var full_number = phone_number.getNumber(intlTelInputUtils.numberFormat.E164);
+        $("input[name='phone_number[full]'").val(full_number);
+
+    });*/
+
+
+</script>-->
+  </body>
+</html>
