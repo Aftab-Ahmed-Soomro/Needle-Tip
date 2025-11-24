@@ -11,5 +11,5 @@ Disallow: /embed/*
 Disallow: /cdn-cgi/*
 
 User-agent: *
-Sitemap: https://yourdigilab.com/sitemap.xml
-Sitemap: https://yourdigilab.com/blog/sitemap.xml
+Sitemap: https://needletip.com/sitemap.xml
+Sitemap: https://needletip.com/blog/sitemap.xml
